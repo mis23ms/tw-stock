@@ -1,4 +1,5 @@
-=name: Update data
+name: Update data
+
 
 on:
   workflow_dispatch:

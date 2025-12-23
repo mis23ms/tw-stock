@@ -196,15 +196,19 @@ def parse_fubon_zgb() -> Dict[str, Any]:
         unit_m = re.search(r"單位：\s*([^<\s]+)", html)
         unit = unit_m.group(1) if unit_m else None
 
-        soup = BeautifulSoup(html, "lxml")
-        table = None
-        for t in soup.find_all("table"):
-            th_text = " ".join([th.get_text(strip=True) for th in t.find_all("th")])
-            if "券商名稱" in th_text and "買進金額" in th_text and "賣出金額" in th_text:
-                table = t
-                break
-        if table is None:
-            raise RuntimeError("找不到 ZGB 表格")
+soup = BeautifulSoup(html, "lxml")
+    table = None
+    for t in soup.find_all("table"):
+        tr0 = t.find("tr")
+        if not tr0:
+            continue
+        header = " ".join([c.get_text(strip=True) for c in tr0.find_all(["th", "td"])])
+        if ("券商名稱" in header) and ("買進金額" in header) and ("賣出金額" in header):
+            table = t
+            break
+    if table is None:
+        raise RuntimeError("找不到 ZGB 表格")
+
 
         rows = []
         for tr in table.find_all("tr"):

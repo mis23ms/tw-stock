@@ -189,105 +189,112 @@ def fetch_stock_close_and_change(ticker: str, date_hint: str) -> Tuple[Optional[
 
 
 def parse_fubon_zgb() -> Dict[str, Any]:
+    """
+    用 Playwright 直接用「真人瀏覽器」開富邦 MoneyDJ 頁面抓表格。
+    成功：回傳 {"date": "YYYYMMDD", "unit": "...", "brokers": [{"name","buy","sell","diff"}, ...]}
+    失敗：回傳 {"date": None, "unit": None, "brokers": [], "error": "..."}
+    """
     try:
-        html = fetch_text(FUBON_ZGB_URL, encoding="big5")
+        # 放在函式內 import，避免你沒裝 playwright 時，整支腳本直接 import 爆炸
+        from playwright.sync_api import sync_playwright
 
-        # 日期 / 單位（保持你原本的抓法，抓不到就 None）
-        m = re.search(r"資料日期\s*[:：]\s*(\d{8})", html)
-        date = m.group(1) if m else None
-        unit_m = re.search(r"單位\s*[:：]\s*([^<\s]+)", html)
-        unit = unit_m.group(1) if unit_m else None
+        url = "https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZGB/ZGB.djhtm"
+        target = ["摩根大通", "台灣摩根士丹利", "新加坡商瑞銀", "美林", "花旗環球", "美商高盛"]
 
         def norm(s: str) -> str:
-            if s is None:
-                return ""
-            s = s.replace("\xa0", " ").replace("\u3000", " ")
-            s = re.sub(r"\s+", " ", s).strip()
-            return s
+            return (s or "").replace("\u3000", " ").replace("\xa0", " ").strip()
 
-        def find_col_idx(headers: List[str], keys: List[str]) -> Optional[int]:
-            for i, h in enumerate(headers):
-                for k in keys:
-                    if k in h:
-                        return i
-            return None
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            page = browser.new_page()
+            page.goto(url, wait_until="networkidle", timeout=60000)
+            page.wait_for_timeout(1200)  # 多等一下，避免表格晚一拍才出現
 
-        soup = BeautifulSoup(html, "lxml")
+            # 從頁面文字抓「資料日期 / 單位」（抓不到也沒關係，不要讓整段失敗）
+            full_text = norm(page.inner_text("body"))
+            date = None
+            unit = None
+            # 常見格式：資料日期 20251223、單位 仟元
+            import re
+            m = re.search(r"資料日期\s*([0-9]{8})", full_text)
+            if m:
+                date = m.group(1)
+            m = re.search(r"單位\s*([^\s]+)", full_text)
+            if m:
+                unit = m.group(1)
 
-        target_table = None
-        header_cells: List[str] = []
+            # 直接掃所有 tr：只要那一列含券商名字，就抓該列所有欄位
+            rows = page.query_selector_all("tr")
 
-        # 找到包含「券商」+「買進」+「賣出」的表格
-        for t in soup.find_all("table"):
-            tr0 = t.find("tr")
-            if not tr0:
-                continue
-            hs = [norm(c.get_text(" ", strip=True)) for c in tr0.find_all(["th", "td"])]
-            joined = " ".join(hs)
-            if ("券商" in joined or "券商名稱" in joined) and ("買進" in joined) and ("賣出" in joined):
-                target_table = t
-                header_cells = hs
-                break
+            # 先找表頭欄位位置（不同天/不同版面可能會變動）
+            header_cols = None
+            header_map = {}
+            for tr in rows[:50]:
+                cells = tr.query_selector_all("th,td")
+                texts = [norm(c.inner_text()) for c in cells]
+                joined = " ".join(texts)
+                if ("券商" in joined or "券商名稱" in joined) and ("買進" in joined) and ("賣出" in joined):
+                    header_cols = texts
+                    # 建立欄位索引
+                    for i, t in enumerate(texts):
+                        if "券商" in t:
+                            header_map["name"] = i
+                        elif "買進" in t:
+                            header_map["buy"] = i
+                        elif "賣出" in t:
+                            header_map["sell"] = i
+                        elif "差額" in t or "買賣超" in t:
+                            header_map["diff"] = i
+                    break
 
-        if target_table is None:
-            raise RuntimeError("找不到 ZGB 表格")
+            # 若抓不到表頭，就用最常見的 [0,1,2,3]
+            name_i = header_map.get("name", 0)
+            buy_i = header_map.get("buy", 1)
+            sell_i = header_map.get("sell", 2)
+            diff_i = header_map.get("diff", 3)
 
-        # 欄位索引（重點：支援前面多一欄序號/排名）
-        name_i = find_col_idx(header_cells, ["券商名稱", "券商", "分點"])
-        buy_i  = find_col_idx(header_cells, ["買進金額", "買進"])
-        sell_i = find_col_idx(header_cells, ["賣出金額", "賣出"])
-        diff_i = find_col_idx(header_cells, ["差額", "買賣超", "淨額"])
+            # 建結果字典，最後照固定 6 家輸出
+            found: Dict[str, Dict[str, str]] = {k: {"buy": "-", "sell": "-", "diff": "-"} for k in target}
 
-        # 兜底
-        if name_i is None:
-            name_i = 0
-        if buy_i is None or sell_i is None:
-            raise RuntimeError(f"ZGB 欄位定位失敗 header={header_cells}")
+            for tr in rows:
+                tds = tr.query_selector_all("td")
+                if not tds:
+                    continue
 
-        rows = []
-        for tr in target_table.find_all("tr"):
-            cells = [norm(c.get_text(" ", strip=True)) for c in tr.find_all(["th", "td"])]
-            if not cells:
-                continue
+                texts = [norm(td.inner_text()) for td in tds]
+                if not texts:
+                    continue
 
-            joined = " ".join(cells)
-            # 跳過標題列/小計列
-            if ("買進" in joined and "賣出" in joined) or any(k in joined for k in ["合計", "總計", "小計"]):
-                continue
-
-            # 先用 name_i 拿券商名稱；如果拿不到/不吻合，就掃整列找券商名稱
-            name = cells[name_i] if name_i < len(cells) else ""
-            if not any(w in name for w in ZGB_BROKERS):
-                for c in cells:
-                    if any(w in c for w in ZGB_BROKERS):
-                        name = c
+                row_text = " ".join(texts)
+                hit = None
+                for b in target:
+                    if b in row_text:
+                        hit = b
                         break
+                if not hit:
+                    continue
 
-            # 不是我們要的 6 家就跳過
-            if not any(w in name for w in ZGB_BROKERS):
-                continue
+                # 依索引安全取值（避免欄位不夠）
+                def get(i: int) -> str:
+                    if 0 <= i < len(texts):
+                        v = norm(texts[i])
+                        return v if v else "-"
+                    return "-"
 
-            def safe_get(idx: int) -> str:
-                return cells[idx] if idx is not None and idx < len(cells) else "-"
+                # 券商名稱有時不在第 0 欄，保險起見：如果 name 欄抓不到，就用整列文字去推
+                buy_v = get(buy_i)
+                sell_v = get(sell_i)
+                diff_v = get(diff_i)
 
-            rows.append({
-                "name": name,
-                "buy":  safe_get(buy_i),
-                "sell": safe_get(sell_i),
-                "diff": safe_get(diff_i) if diff_i is not None else "-",
-            })
+                found[hit] = {"buy": buy_v, "sell": sell_v, "diff": diff_v}
 
-        # 依你設定的 6 家順序輸出
-        ordered = []
-        for want in ZGB_BROKERS:
-            hit = next((r for r in rows if want in r.get("name", "")), None)
-            ordered.append(hit if hit else {"name": want, "buy": "-", "sell": "-", "diff": "-"})
+            browser.close()
 
+        ordered = [{"name": b, "buy": found[b]["buy"], "sell": found[b]["sell"], "diff": found[b]["diff"]} for b in target]
         return {"date": date, "unit": unit, "brokers": ordered}
 
     except Exception as e:
         return {"date": None, "unit": None, "brokers": [], "error": str(e)}
-
 
 
 

@@ -190,108 +190,100 @@ def fetch_stock_close_and_change(ticker: str, date_hint: str) -> Tuple[Optional[
 
 def parse_fubon_zgb() -> Dict[str, Any]:
     """
-    用 Playwright 直接用「真人瀏覽器」開富邦 MoneyDJ 頁面抓表格。
-    成功：回傳 {"date": "YYYYMMDD", "unit": "...", "brokers": [{"name","buy","sell","diff"}, ...]}
-    失敗：回傳 {"date": None, "unit": None, "brokers": [], "error": "..."}
+    用 Playwright 真瀏覽器抓富邦 ZGB，並在頁面端用 JS 找到表頭欄位位置再取值
     """
     try:
-        # 放在函式內 import，避免你沒裝 playwright 時，整支腳本直接 import 爆炸
-        from playwright.sync_api import sync_playwright
+        import asyncio
+        from playwright.async_api import async_playwright
 
-        url = "https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZGB/ZGB.djhtm"
-        target = ["摩根大通", "台灣摩根士丹利", "新加坡商瑞銀", "美林", "花旗環球", "美商高盛"]
+        async def _run():
+            async with async_playwright() as p:
+                browser = await p.chromium.launch(
+                    headless=True,
+                    args=["--no-sandbox", "--disable-setuid-sandbox"],
+                )
+                context = await browser.new_context(
+                    user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"
+                )
+                page = await context.new_page()
+                await page.goto(FUBON_ZGB_URL, wait_until="networkidle", timeout=60000)
 
-        def norm(s: str) -> str:
-            return (s or "").replace("\u3000", " ").replace("\xa0", " ").strip()
+                # 抓資料日期 / 單位（用整頁文字 regex）
+                body_text = await page.evaluate("() => document.body.innerText || ''")
 
-        with sync_playwright() as p:
-            browser = p.chromium.launch(headless=True)
-            page = browser.new_page()
-            page.goto(url, wait_until="networkidle", timeout=60000)
-            page.wait_for_timeout(1200)  # 多等一下，避免表格晚一拍才出現
+                m_date = re.search(r"資料日期[:：]?\s*(\d{8})", body_text)
+                date = m_date.group(1) if m_date else None
 
-            # 從頁面文字抓「資料日期 / 單位」（抓不到也沒關係，不要讓整段失敗）
-            full_text = norm(page.inner_text("body"))
-            date = None
-            unit = None
-            # 常見格式：資料日期 20251223、單位 仟元
-            import re
-            m = re.search(r"資料日期\s*([0-9]{8})", full_text)
-            if m:
-                date = m.group(1)
-            m = re.search(r"單位\s*([^\s]+)", full_text)
-            if m:
-                unit = m.group(1)
+                m_unit = re.search(r"單位[:：]?\s*([^\s]+)", body_text)
+                unit = m_unit.group(1) if m_unit else None
 
-            # 直接掃所有 tr：只要那一列含券商名字，就抓該列所有欄位
-            rows = page.query_selector_all("tr")
+                brokers = await page.evaluate(
+                    """(targets) => {
+                        const clean = (s) => (s || '').replace(/\\u00a0/g,' ').trim(); // NBSP
+                        const tables = Array.from(document.querySelectorAll('table'));
 
-            # 先找表頭欄位位置（不同天/不同版面可能會變動）
-            header_cols = None
-            header_map = {}
-            for tr in rows[:50]:
-                cells = tr.query_selector_all("th,td")
-                texts = [norm(c.inner_text()) for c in cells]
-                joined = " ".join(texts)
-                if ("券商" in joined or "券商名稱" in joined) and ("買進" in joined) and ("賣出" in joined):
-                    header_cols = texts
-                    # 建立欄位索引
-                    for i, t in enumerate(texts):
-                        if "券商" in t:
-                            header_map["name"] = i
-                        elif "買進" in t:
-                            header_map["buy"] = i
-                        elif "賣出" in t:
-                            header_map["sell"] = i
-                        elif "差額" in t or "買賣超" in t:
-                            header_map["diff"] = i
-                    break
+                        // 找包含關鍵表頭的 table
+                        const targetTable = tables.find(t => {
+                            const txt = t.innerText || '';
+                            return txt.includes('券商名稱') && txt.includes('買進金額') && txt.includes('賣出金額') && txt.includes('差額');
+                        });
 
-            # 若抓不到表頭，就用最常見的 [0,1,2,3]
-            name_i = header_map.get("name", 0)
-            buy_i = header_map.get("buy", 1)
-            sell_i = header_map.get("sell", 2)
-            diff_i = header_map.get("diff", 3)
+                        if (!targetTable) {
+                            return { error: '找不到 ZGB 表格(table)' , rows: [] };
+                        }
 
-            # 建結果字典，最後照固定 6 家輸出
-            found: Dict[str, Dict[str, str]] = {k: {"buy": "-", "sell": "-", "diff": "-"} for k in target}
+                        const trs = Array.from(targetTable.querySelectorAll('tr'));
+                        if (trs.length === 0) {
+                            return { error: '找不到 ZGB 表格(tr)' , rows: [] };
+                        }
 
-            for tr in rows:
-                tds = tr.query_selector_all("td")
-                if not tds:
-                    continue
+                        // 找表頭列：含 券商名稱/買進金額/賣出金額/差額
+                        const headerTr = trs.find(tr => {
+                            const t = tr.innerText || '';
+                            return t.includes('券商名稱') && t.includes('買進金額') && t.includes('賣出金額') && t.includes('差額');
+                        }) || trs[0];
 
-                texts = [norm(td.inner_text()) for td in tds]
-                if not texts:
-                    continue
+                        const headerCells = Array.from(headerTr.querySelectorAll('th,td')).map(c => clean(c.innerText));
+                        const idxName = headerCells.findIndex(x => x.includes('券商名稱'));
+                        const idxBuy  = headerCells.findIndex(x => x.includes('買進金額'));
+                        const idxSell = headerCells.findIndex(x => x.includes('賣出金額'));
+                        const idxDiff = headerCells.findIndex(x => x.includes('差額'));
 
-                row_text = " ".join(texts)
-                hit = None
-                for b in target:
-                    if b in row_text:
-                        hit = b
-                        break
-                if not hit:
-                    continue
+                        // 若找不到表頭 index，就退回常見位置（避免 -1）
+                        const nameI = idxName >= 0 ? idxName : 0;
+                        const buyI  = idxBuy  >= 0 ? idxBuy  : 1;
+                        const sellI = idxSell >= 0 ? idxSell : 2;
+                        const diffI = idxDiff >= 0 ? idxDiff : 3;
 
-                # 依索引安全取值（避免欄位不夠）
-                def get(i: int) -> str:
-                    if 0 <= i < len(texts):
-                        v = norm(texts[i])
-                        return v if v else "-"
-                    return "-"
+                        // 只收資料列
+                        const dataTrs = trs.filter(tr => tr !== headerTr);
 
-                # 券商名稱有時不在第 0 欄，保險起見：如果 name 欄抓不到，就用整列文字去推
-                buy_v = get(buy_i)
-                sell_v = get(sell_i)
-                diff_v = get(diff_i)
+                        const pickRow = (broker) => {
+                            const tr = dataTrs.find(r => (r.innerText || '').includes(broker));
+                            if (!tr) return { name: broker, buy: "-", sell: "-", diff: "-" };
 
-                found[hit] = {"buy": buy_v, "sell": sell_v, "diff": diff_v}
+                            const cols = Array.from(tr.querySelectorAll('th,td')).map(c => clean(c.innerText));
+                            return {
+                                name: broker,
+                                buy:  cols[buyI]  ?? "-",
+                                sell: cols[sellI] ?? "-",
+                                diff: cols[diffI] ?? "-",
+                            };
+                        };
 
-            browser.close()
+                        return { error: null, rows: targets.map(pickRow) };
+                    }""",
+                    ZGB_BROKERS,
+                )
 
-        ordered = [{"name": b, "buy": found[b]["buy"], "sell": found[b]["sell"], "diff": found[b]["diff"]} for b in target]
-        return {"date": date, "unit": unit, "brokers": ordered}
+                await browser.close()
+
+                if isinstance(brokers, dict) and brokers.get("error"):
+                    return {"date": date, "unit": unit, "brokers": [], "error": brokers["error"]}
+
+                return {"date": date, "unit": unit, "brokers": brokers.get("rows", []), "error": None}
+
+        return asyncio.run(_run())
 
     except Exception as e:
         return {"date": None, "unit": None, "brokers": [], "error": str(e)}

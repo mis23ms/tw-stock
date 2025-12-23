@@ -190,68 +190,106 @@ def fetch_stock_close_and_change(ticker: str, date_hint: str) -> Tuple[Optional[
 
 def parse_fubon_zgb() -> Dict[str, Any]:
     """
-    富邦 ZGB：券商分點進出金額排行（左右各一欄：買超 / 賣超）
-    這頁的重點是：同一列會同時包含 左邊券商(買超) + 右邊券商(賣超)
-    所以要用 8 個欄位去拆：0~3 左邊，4~7 右邊，避免抓到同一個數字重複填滿。
+    富邦 ZGB：券商分點進出金額排行
+    用 Playwright 進瀏覽器抓，避免 requests/bs4 被擋或結構一變就掛。
+    回傳:
+      {
+        "date": "YYYYMMDD" 或 None,
+        "unit": "仟元" 或 None,
+        "brokers": [{"name":..., "buy":..., "sell":..., "diff":...}, ...],
+        "error": "...(可選)"
+      }
     """
     try:
-        from playwright.sync_api import sync_playwright
+        import asyncio
+        from playwright.async_api import async_playwright
 
-        with sync_playwright() as p:
-            browser = p.chromium.launch(headless=True)
-            context = browser.new_context(
-                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36",
-                locale="zh-TW",
-            )
-            page = context.new_page()
-            page.goto(FUBON_ZGB_URL, wait_until="networkidle", timeout=60000)
+        async def _run():
+            url = "https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZGB/ZGB.djhtm"
 
-            payload = page.evaluate(
-                """
-                (targets) => {
-                  const text = document.body ? document.body.innerText : "";
+            async with async_playwright() as p:
+                browser = await p.chromium.launch(headless=True)
+                context = await browser.new_context(
+                    user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+                )
+                page = await context.new_page()
+                await page.goto(url, wait_until="networkidle")
 
-                  const dateMatch = text.match(/資料日期\\s*[:：]?\\s*(\\d{8})/);
-                  const unitMatch = text.match(/單位\\s*[:：]?\\s*([^\\s]+)/);
+                targets = ZGB_BROKERS  # 你原本就有的 6 家清單
 
-                  const date = dateMatch ? dateMatch[1] : null;
-                  const unit = unitMatch ? unitMatch[1] : null;
+                result = await page.evaluate(
+                    """(targets) => {
+                        const bodyText = document.body?.innerText || "";
 
-                  // 先把目標券商預設成 "-"
-                  const out = {};
-                  for (const n of targets) out[n] = { name: n, buy: "-", sell: "-", diff: "-" };
+                        const dm = bodyText.match(/資料日期\\s*[:：]\\s*(\\d{8})/);
+                        const um = bodyText.match(/單位\\s*[:：]\\s*([^\\s]+)/);
 
-                  // 逐列掃描：優先處理 8 欄（左右各4欄）避免數字亂套
-                  const rows = Array.from(document.querySelectorAll("tr"));
-                  for (const r of rows) {
-                    const tds = Array.from(r.querySelectorAll("td")).map(td => (td.innerText || "").trim());
-                    if (tds.length >= 8) {
-                      const nL = tds[0], bL = tds[1], sL = tds[2], dL = tds[3];
-                      const nR = tds[4], bR = tds[5], sR = tds[6], dR = tds[7];
+                        // 找「包含 4 個欄位標題」的表格（不管在買超/賣超哪一邊都抓得到）
+                        const tables = Array.from(document.querySelectorAll("table"));
+                        let targetTable = null;
 
-                      if (out[nL]) out[nL] = { name: nL, buy: bL || "-", sell: sL || "-", diff: dL || "-" };
-                      if (out[nR]) out[nR] = { name: nR, buy: bR || "-", sell: sR || "-", diff: dR || "-" };
-                      continue;
-                    }
+                        for (const t of tables) {
+                          const head = (t.innerText || "");
+                          if (head.includes("券商名稱") && head.includes("買進金額") && head.includes("賣出金額") && head.includes("差額")) {
+                            targetTable = t;
+                            // 如果附近文字有「賣超」就優先用它（通常外資會落在賣超那邊）
+                            const near = t.parentElement?.innerText || "";
+                            if (near.includes("賣超")) break;
+                          }
+                        }
 
-                    // 少數情況 fallback：如果頁面只剩單邊表格
-                    if (tds.length >= 4) {
-                      const n = tds[0], b = tds[1], s = tds[2], d = tds[3];
-                      if (out[n]) out[n] = { name: n, buy: b || "-", sell: s || "-", diff: d || "-" };
-                    }
-                  }
+                        const emptyRow = (name) => ({ name, buy: "-", sell: "-", diff: "-" });
 
-                  return { date, unit, brokers: targets.map(n => out[n]) };
-                }
-                """,
-                ZGB_BROKERS,
-            )
+                        if (!targetTable) {
+                          return {
+                            date: dm ? dm[1] : null,
+                            unit: um ? um[1] : null,
+                            brokers: targets.map(emptyRow),
+                            error: "找不到含欄位標題的 ZGB 表格"
+                          };
+                        }
 
-            browser.close()
-            return payload
+                        // 建索引：name -> {buy,sell,diff}
+                        const rows = Array.from(targetTable.querySelectorAll("tr"));
+                        const map = new Map();
+
+                        for (const tr of rows) {
+                          const tds = tr.querySelectorAll("td");
+                          if (!tds || tds.length < 4) continue;
+
+                          const name = (tds[0].innerText || "").trim();
+                          if (!name) continue;
+
+                          const buy  = (tds[1].innerText || "").trim();
+                          const sell = (tds[2].innerText || "").trim();
+                          const diff = (tds[3].innerText || "").trim();
+
+                          // 只收「我們要的券商」
+                          for (const want of targets) {
+                            if (name.includes(want)) {
+                              map.set(want, { name: want, buy: buy || "-", sell: sell || "-", diff: diff || "-" });
+                            }
+                          }
+                        }
+
+                        return {
+                          date: dm ? dm[1] : null,
+                          unit: um ? um[1] : null,
+                          brokers: targets.map((n) => map.get(n) || emptyRow(n))
+                        };
+                    }""",
+                    targets,
+                )
+
+                await browser.close()
+                return result
+
+        # CLI 執行環境用 asyncio.run 最穩
+        return asyncio.run(_run())
 
     except Exception as e:
         return {"date": None, "unit": None, "brokers": [], "error": str(e)}
+
 
 
 

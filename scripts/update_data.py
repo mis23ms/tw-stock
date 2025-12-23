@@ -191,41 +191,61 @@ def fetch_stock_close_and_change(ticker: str, date_hint: str) -> Tuple[Optional[
 def parse_fubon_zgb() -> Dict[str, Any]:
     try:
         html = fetch_text(FUBON_ZGB_URL, encoding="big5")
+
+        # 日期/單位（有就抓，沒有就留空）
         m = re.search(r"資料日期：\s*(\d{8})", html)
         date = m.group(1) if m else None
         unit_m = re.search(r"單位：\s*([^<\s]+)", html)
         unit = unit_m.group(1) if unit_m else None
 
-soup = BeautifulSoup(html, "lxml")
-    table = None
-    for t in soup.find_all("table"):
-        tr0 = t.find("tr")
-        if not tr0:
-            continue
-        header = " ".join([c.get_text(strip=True) for c in tr0.find_all(["th", "td"])])
-        if ("券商名稱" in header) and ("買進金額" in header) and ("賣出金額" in header):
-            table = t
-            break
-    if table is None:
-        raise RuntimeError("找不到 ZGB 表格")
+        soup = BeautifulSoup(html, "lxml")
 
+        # 改成：用「券商名單」去鎖表格，避免表頭文字變動就找不到
+        table = None
+        tables = soup.find_all("table")
+
+        # 先找：同時包含「買進/賣出」且包含任一個指定券商
+        for t in tables:
+            txt = t.get_text(" ", strip=True)
+            if ("買進" in txt and "賣出" in txt and any(b in txt for b in ZGB_BROKERS)):
+                table = t
+                break
+
+        # 再找：只要包含任一個指定券商就算（保險）
+        if table is None:
+            for t in tables:
+                txt = t.get_text(" ", strip=True)
+                if any(b in txt for b in ZGB_BROKERS):
+                    table = t
+                    break
+
+        if table is None:
+            raise RuntimeError("找不到 ZGB 表格")
 
         rows = []
         for tr in table.find_all("tr"):
-            tds = [td.get_text(" ", strip=True) for td in tr.find_all(["td", "th"])]
-            if len(tds) < 4:
+            cols = [c.get_text(" ", strip=True) for c in tr.find_all(["th", "td"])]
+            if len(cols) < 4:
                 continue
-            name = tds[0]
-            if name in {"券商名稱", "買超", "賣超"}:
-                continue
-            if any(k in name for k in ZGB_BROKERS):
-                rows.append({"name": name, "buy": tds[1], "sell": tds[2], "diff": tds[3]})
 
+            name = cols[0]
+
+            # 跳過表頭/雜訊列
+            if any(k in name for k in ("券商", "名稱", "買進", "賣出", "差額", "淨額")):
+                continue
+
+            # 只收你名單內券商（允許「包含」避免分點/空白）
+            if any(want in name for want in ZGB_BROKERS):
+                rows.append({"name": name, "buy": cols[1], "sell": cols[2], "diff": cols[3]})
+
+        # 依你設定的 6 家順序輸出，沒抓到就用 -
         ordered = []
         for want in ZGB_BROKERS:
             hit = next((r for r in rows if want in r["name"]), None)
             ordered.append(hit if hit else {"name": want, "buy": "-", "sell": "-", "diff": "-"})
+
         return {"date": date, "unit": unit, "brokers": ordered}
+
     except Exception as e:
         return {"date": None, "unit": None, "brokers": [], "error": str(e)}
 

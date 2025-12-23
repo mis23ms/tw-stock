@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-23T22:50:57+08:00",
+  "generated_at": "2025-12-23T22:57:14+08:00",
   "latest_trading_day": "2025-12-23",
   "prev_trading_day": "2025-12-22",
   "stocks": [
@@ -251,10 +251,47 @@
     }
   ],
   "fubon_zgb": {
-    "date": null,
-    "unit": null,
-    "brokers": [],
-    "error": "No module named 'playwright'"
+    "date": "20251223",
+    "unit": "仟元",
+    "brokers": [
+      {
+        "name": "摩根大通",
+        "buy": "353,438",
+        "sell": "353,438",
+        "diff": "353,438"
+      },
+      {
+        "name": "台灣摩根士丹利",
+        "buy": "353,438",
+        "sell": "353,438",
+        "diff": "353,438"
+      },
+      {
+        "name": "新加坡商瑞銀",
+        "buy": "353,438",
+        "sell": "353,438",
+        "diff": "353,438"
+      },
+      {
+        "name": "美林",
+        "buy": "353,438",
+        "sell": "353,438",
+        "diff": "353,438"
+      },
+      {
+        "name": "花旗環球",
+        "buy": "353,438",
+        "sell": "353,438",
+        "diff": "353,438"
+      },
+      {
+        "name": "美商高盛",
+        "buy": "-",
+        "sell": "-",
+        "diff": "-"
+      }
+    ],
+    "error": null
   },
   "fubon_zgk_d": {
     "date": null,

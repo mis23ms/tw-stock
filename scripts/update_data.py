@@ -192,62 +192,62 @@ def parse_fubon_zgb() -> Dict[str, Any]:
     try:
         html = fetch_text(FUBON_ZGB_URL, encoding="big5")
 
-        # 日期/單位（有就抓，沒有就留空）
-        m = re.search(r"資料日期：\s*(\d{8})", html)
+        # 資料日期 / 單位（容錯：冒號可能是 : 或 ：，中間可能有空白）
+        m = re.search(r"資料日期[:：]?\s*(\d{8})", html)
         date = m.group(1) if m else None
-        unit_m = re.search(r"單位：\s*([^<\s]+)", html)
+
+        unit_m = re.search(r"單位[:：]?\s*([^\s<]+)", html)
         unit = unit_m.group(1) if unit_m else None
+
+        def norm(s: str) -> str:
+            s = s or ""
+            return re.sub(r"[\s\u3000()（）\[\]【】]", "", s)
+
+        alias_map = {
+            "摩根大通": ["摩根大通", "JP摩根", "JPM"],
+            "台灣摩根士丹利": ["台灣摩根士丹利", "摩根士丹利", "MorganStanley", "MS"],
+            "新加坡商瑞銀": ["新加坡商瑞銀", "瑞銀", "UBS"],
+            "美林": ["美林", "Merrill"],
+            "花旗環球": ["花旗環球", "花旗", "Citi", "Citigroup"],
+            "美商高盛": ["美商高盛", "高盛", "Goldman", "GS"],
+        }
+
+        desired = ZGB_BROKERS if ("ZGB_BROKERS" in globals() and ZGB_BROKERS) else list(alias_map.keys())
+        for d in desired:
+            alias_map.setdefault(d, [d])
 
         soup = BeautifulSoup(html, "lxml")
 
-        # 改成：用「券商名單」去鎖表格，避免表頭文字變動就找不到
         table = None
-        tables = soup.find_all("table")
-
-        # 先找：同時包含「買進/賣出」且包含任一個指定券商
-        for t in tables:
-            txt = t.get_text(" ", strip=True)
-            if ("買進" in txt and "賣出" in txt and any(b in txt for b in ZGB_BROKERS)):
+        for t in soup.find_all("table"):
+            tr0 = t.find("tr")
+            if not tr0:
+                continue
+            header = " ".join(c.get_text(" ", strip=True) for c in tr0.find_all(["th", "td"]))
+            if ("券商" in header) and ("買進" in header) and ("賣出" in header):
                 table = t
                 break
-
-        # 再找：只要包含任一個指定券商就算（保險）
-        if table is None:
-            for t in tables:
-                txt = t.get_text(" ", strip=True)
-                if any(b in txt for b in ZGB_BROKERS):
-                    table = t
-                    break
 
         if table is None:
             raise RuntimeError("找不到 ZGB 表格")
 
-        rows = []
+        all_rows = []
         for tr in table.find_all("tr"):
-            cols = [c.get_text(" ", strip=True) for c in tr.find_all(["th", "td"])]
+            cols = [td.get_text(" ", strip=True) for td in tr.find_all(["td", "th"])]
             if len(cols) < 4:
                 continue
-
             name = cols[0]
-
-            # 跳過表頭/雜訊列
-            if any(k in name for k in ("券商", "名稱", "買進", "賣出", "差額", "淨額")):
+            if ("券商" in name) or (name in ("券商名稱", "買進金額", "賣出金額", "差額")):
                 continue
+            all_rows.append({"name": name, "buy": cols[1], "sell": cols[2], "diff": cols[3]})
 
-            # 只收你名單內券商（允許「包含」避免分點/空白）
-            if any(want in name for want in ZGB_BROKERS):
-                rows.append({"name": name, "buy": cols[1], "sell": cols[2], "diff": cols[3]})
-
-        # 依你設定的 6 家順序輸出，沒抓到就用 -
         ordered = []
-        for want in ZGB_BROKERS:
-            hit = next((r for r in rows if want in r["name"]), None)
-            ordered.append(hit if hit else {"name": want, "buy": "-", "sell": "-", "diff": "-"})
+        for want in desired:
+            aliases = [norm(a) for a in alias_map.get(want, [want])]
+            hit = None
+            for r in all_rows:
+                rname = norm(r.get("
 
-        return {"date": date, "unit": unit, "brokers": ordered}
-
-    except Exception as e:
-        return {"date": None, "unit": None, "brokers": [], "error": str(e)}
 
 
 def parse_fubon_zgk_d(limit: int = 50) -> Dict[str, Any]:

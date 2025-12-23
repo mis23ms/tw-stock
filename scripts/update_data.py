@@ -190,103 +190,69 @@ def fetch_stock_close_and_change(ticker: str, date_hint: str) -> Tuple[Optional[
 
 def parse_fubon_zgb() -> Dict[str, Any]:
     """
-    用 Playwright 真瀏覽器抓富邦 ZGB，並在頁面端用 JS 找到表頭欄位位置再取值
+    富邦 ZGB：券商分點進出金額排行（左右各一欄：買超 / 賣超）
+    這頁的重點是：同一列會同時包含 左邊券商(買超) + 右邊券商(賣超)
+    所以要用 8 個欄位去拆：0~3 左邊，4~7 右邊，避免抓到同一個數字重複填滿。
     """
     try:
-        import asyncio
-        from playwright.async_api import async_playwright
+        from playwright.sync_api import sync_playwright
 
-        async def _run():
-            async with async_playwright() as p:
-                browser = await p.chromium.launch(
-                    headless=True,
-                    args=["--no-sandbox", "--disable-setuid-sandbox"],
-                )
-                context = await browser.new_context(
-                    user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"
-                )
-                page = await context.new_page()
-                await page.goto(FUBON_ZGB_URL, wait_until="networkidle", timeout=60000)
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            context = browser.new_context(
+                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36",
+                locale="zh-TW",
+            )
+            page = context.new_page()
+            page.goto(FUBON_ZGB_URL, wait_until="networkidle", timeout=60000)
 
-                # 抓資料日期 / 單位（用整頁文字 regex）
-                body_text = await page.evaluate("() => document.body.innerText || ''")
+            payload = page.evaluate(
+                """
+                (targets) => {
+                  const text = document.body ? document.body.innerText : "";
 
-                m_date = re.search(r"資料日期[:：]?\s*(\d{8})", body_text)
-                date = m_date.group(1) if m_date else None
+                  const dateMatch = text.match(/資料日期\\s*[:：]?\\s*(\\d{8})/);
+                  const unitMatch = text.match(/單位\\s*[:：]?\\s*([^\\s]+)/);
 
-                m_unit = re.search(r"單位[:：]?\s*([^\s]+)", body_text)
-                unit = m_unit.group(1) if m_unit else None
+                  const date = dateMatch ? dateMatch[1] : null;
+                  const unit = unitMatch ? unitMatch[1] : null;
 
-                brokers = await page.evaluate(
-                    """(targets) => {
-                        const clean = (s) => (s || '').replace(/\\u00a0/g,' ').trim(); // NBSP
-                        const tables = Array.from(document.querySelectorAll('table'));
+                  // 先把目標券商預設成 "-"
+                  const out = {};
+                  for (const n of targets) out[n] = { name: n, buy: "-", sell: "-", diff: "-" };
 
-                        // 找包含關鍵表頭的 table
-                        const targetTable = tables.find(t => {
-                            const txt = t.innerText || '';
-                            return txt.includes('券商名稱') && txt.includes('買進金額') && txt.includes('賣出金額') && txt.includes('差額');
-                        });
+                  // 逐列掃描：優先處理 8 欄（左右各4欄）避免數字亂套
+                  const rows = Array.from(document.querySelectorAll("tr"));
+                  for (const r of rows) {
+                    const tds = Array.from(r.querySelectorAll("td")).map(td => (td.innerText || "").trim());
+                    if (tds.length >= 8) {
+                      const nL = tds[0], bL = tds[1], sL = tds[2], dL = tds[3];
+                      const nR = tds[4], bR = tds[5], sR = tds[6], dR = tds[7];
 
-                        if (!targetTable) {
-                            return { error: '找不到 ZGB 表格(table)' , rows: [] };
-                        }
+                      if (out[nL]) out[nL] = { name: nL, buy: bL || "-", sell: sL || "-", diff: dL || "-" };
+                      if (out[nR]) out[nR] = { name: nR, buy: bR || "-", sell: sR || "-", diff: dR || "-" };
+                      continue;
+                    }
 
-                        const trs = Array.from(targetTable.querySelectorAll('tr'));
-                        if (trs.length === 0) {
-                            return { error: '找不到 ZGB 表格(tr)' , rows: [] };
-                        }
+                    // 少數情況 fallback：如果頁面只剩單邊表格
+                    if (tds.length >= 4) {
+                      const n = tds[0], b = tds[1], s = tds[2], d = tds[3];
+                      if (out[n]) out[n] = { name: n, buy: b || "-", sell: s || "-", diff: d || "-" };
+                    }
+                  }
 
-                        // 找表頭列：含 券商名稱/買進金額/賣出金額/差額
-                        const headerTr = trs.find(tr => {
-                            const t = tr.innerText || '';
-                            return t.includes('券商名稱') && t.includes('買進金額') && t.includes('賣出金額') && t.includes('差額');
-                        }) || trs[0];
+                  return { date, unit, brokers: targets.map(n => out[n]) };
+                }
+                """,
+                ZGB_BROKERS,
+            )
 
-                        const headerCells = Array.from(headerTr.querySelectorAll('th,td')).map(c => clean(c.innerText));
-                        const idxName = headerCells.findIndex(x => x.includes('券商名稱'));
-                        const idxBuy  = headerCells.findIndex(x => x.includes('買進金額'));
-                        const idxSell = headerCells.findIndex(x => x.includes('賣出金額'));
-                        const idxDiff = headerCells.findIndex(x => x.includes('差額'));
-
-                        // 若找不到表頭 index，就退回常見位置（避免 -1）
-                        const nameI = idxName >= 0 ? idxName : 0;
-                        const buyI  = idxBuy  >= 0 ? idxBuy  : 1;
-                        const sellI = idxSell >= 0 ? idxSell : 2;
-                        const diffI = idxDiff >= 0 ? idxDiff : 3;
-
-                        // 只收資料列
-                        const dataTrs = trs.filter(tr => tr !== headerTr);
-
-                        const pickRow = (broker) => {
-                            const tr = dataTrs.find(r => (r.innerText || '').includes(broker));
-                            if (!tr) return { name: broker, buy: "-", sell: "-", diff: "-" };
-
-                            const cols = Array.from(tr.querySelectorAll('th,td')).map(c => clean(c.innerText));
-                            return {
-                                name: broker,
-                                buy:  cols[buyI]  ?? "-",
-                                sell: cols[sellI] ?? "-",
-                                diff: cols[diffI] ?? "-",
-                            };
-                        };
-
-                        return { error: null, rows: targets.map(pickRow) };
-                    }""",
-                    ZGB_BROKERS,
-                )
-
-                await browser.close()
-
-                if isinstance(brokers, dict) and brokers.get("error"):
-                    return {"date": date, "unit": unit, "brokers": [], "error": brokers["error"]}
-
-                return {"date": date, "unit": unit, "brokers": brokers.get("rows", []), "error": None}
-
-        return asyncio.run(_run())
+            browser.close()
+            return payload
 
     except Exception as e:
         return {"date": None, "unit": None, "brokers": [], "error": str(e)}
+
 
 
 

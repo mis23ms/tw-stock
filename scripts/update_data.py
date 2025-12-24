@@ -191,40 +191,50 @@ def fetch_stock_close_and_change(ticker: str, date_hint: str) -> Tuple[Optional[
 def parse_fubon_zgb() -> Dict[str, Any]:
     """
     富邦 ZGB：券商分點進出金額排行
-    用 Playwright 進瀏覽器抓，避免 requests/bs4 被擋或結構一變就掛。
-    回傳:
-      {
-        "date": "YYYYMMDD" 或 None,
-        "unit": "仟元" 或 None,
-        "brokers": [{"name":..., "buy":..., "sell":..., "diff":...}, ...],
-        "error": "...(可選)"
-      }
+
+    為什麼不用 requests/BeautifulSoup？
+    - 富邦這種頁面常有反爬/動態載入，你用 requests 會抓到不完整 HTML，
+      最後前端就只會顯示 '-' 或錯數字。
+    - Playwright 是「真的開一個無頭瀏覽器」，等網頁把資料畫出來後再讀 DOM，最穩。
     """
     try:
         import asyncio
         from playwright.async_api import async_playwright
 
         async def _run():
-            url = "https://fubon-ebrokerdj.fbs.com.tw/Z/ZG/ZGB/ZGB.djhtm"
+            url = FUBON_ZGB_URL
 
             async with async_playwright() as p:
+                # headless=True：GitHub Actions 沒螢幕，只能用無頭模式
                 browser = await p.chromium.launch(headless=True)
+
+                # 偽裝一般瀏覽器，降低被當成機器人的機率
                 context = await browser.new_context(
                     user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
                 )
+
                 page = await context.new_page()
+
+                # wait_until="networkidle"：等主要網路請求都穩定下來（避免 DOM 還沒畫完）
                 await page.goto(url, wait_until="networkidle")
 
-                targets = ZGB_BROKERS  # 你原本就有的 6 家清單
+                # 多等一下（保險）：有些頁面 networkidle 了但表格還在最後渲染
+                await page.wait_for_timeout(1500)
+
+                targets = ZGB_BROKERS  # 你指定的 6 家外資
 
                 result = await page.evaluate(
                     """(targets) => {
                         const bodyText = document.body?.innerText || "";
 
+                        // 從整頁文字抓「資料日期」「單位」
                         const dm = bodyText.match(/資料日期\\s*[:：]\\s*(\\d{8})/);
                         const um = bodyText.match(/單位\\s*[:：]\\s*([^\\s]+)/);
 
-                        // 找「包含 4 個欄位標題」的表格（不管在買超/賣超哪一邊都抓得到）
+                        // ZGB 最大的坑：常見「買超 + 賣超」左右合併在同一張表
+                        // 一列可能有 8 個 td：
+                        // 左邊 0..3 = 買超(券商,買進,賣出,差額)
+                        // 右邊 4..7 = 賣超(券商,買進,賣出,差額)
                         const tables = Array.from(document.querySelectorAll("table"));
                         let targetTable = null;
 
@@ -232,9 +242,7 @@ def parse_fubon_zgb() -> Dict[str, Any]:
                           const head = (t.innerText || "");
                           if (head.includes("券商名稱") && head.includes("買進金額") && head.includes("賣出金額") && head.includes("差額")) {
                             targetTable = t;
-                            // 如果附近文字有「賣超」就優先用它（通常外資會落在賣超那邊）
-                            const near = t.parentElement?.innerText || "";
-                            if (near.includes("賣超")) break;
+                            break;
                           }
                         }
 
@@ -249,26 +257,35 @@ def parse_fubon_zgb() -> Dict[str, Any]:
                           };
                         }
 
-                        // 建索引：name -> {buy,sell,diff}
-                        const rows = Array.from(targetTable.querySelectorAll("tr"));
                         const map = new Map();
+                        const rows = Array.from(targetTable.querySelectorAll("tr"));
+
+                        const setIfMatch = (nameCell, buyCell, sellCell, diffCell) => {
+                          const name = (nameCell?.innerText || "").trim();
+                          if (!name) return;
+
+                          for (const want of targets) {
+                            if (name.includes(want)) {
+                              map.set(want, {
+                                name: want,
+                                buy:  (buyCell?.innerText  || "").trim() || "-",
+                                sell: (sellCell?.innerText || "").trim() || "-",
+                                diff: (diffCell?.innerText || "").trim() || "-"
+                              });
+                            }
+                          }
+                        };
 
                         for (const tr of rows) {
                           const tds = tr.querySelectorAll("td");
                           if (!tds || tds.length < 4) continue;
 
-                          const name = (tds[0].innerText || "").trim();
-                          if (!name) continue;
+                          // 左半（買超）
+                          setIfMatch(tds[0], tds[1], tds[2], tds[3]);
 
-                          const buy  = (tds[1].innerText || "").trim();
-                          const sell = (tds[2].innerText || "").trim();
-                          const diff = (tds[3].innerText || "").trim();
-
-                          // 只收「我們要的券商」
-                          for (const want of targets) {
-                            if (name.includes(want)) {
-                              map.set(want, { name: want, buy: buy || "-", sell: sell || "-", diff: diff || "-" });
-                            }
+                          // 右半（賣超）——只有在真的有 8 欄時才處理
+                          if (tds.length >= 8) {
+                            setIfMatch(tds[4], tds[5], tds[6], tds[7]);
                           }
                         }
 
@@ -284,11 +301,12 @@ def parse_fubon_zgb() -> Dict[str, Any]:
                 await browser.close()
                 return result
 
-        # CLI 執行環境用 asyncio.run 最穩
+        # 這支腳本是 CLI 跑的（GitHub Actions 也是 CLI），asyncio.run 最穩
         return asyncio.run(_run())
 
     except Exception as e:
         return {"date": None, "unit": None, "brokers": [], "error": str(e)}
+
 
 
 

@@ -314,11 +314,7 @@ def parse_fubon_zgb() -> Dict[str, Any]:
 def parse_fubon_zgk_d(limit: int = 50) -> Dict[str, Any]:
     try:
         html = fetch_text(FUBON_ZGK_D_URL, encoding="big5")
-       m = re.search(r"日期：(\d{1,2})/(\d{1,2})", html)  # 找 12/24 這種格式
-if m:
-    month, day = m.groups()
-    today = datetime.now()
-    date = f"{today.year}{month.zfill(2)}{day.zfill(2)}"
+m = re.search(r"資料日期\s*[:：]\s*(\d{8})", html)
 
         soup = BeautifulSoup(html, "lxml")
         table = soup.find("table")

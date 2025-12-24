@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-24T21:15:08+08:00",
+  "generated_at": "2025-12-24T21:43:04+08:00",
   "latest_trading_day": "2025-12-24",
   "prev_trading_day": "2025-12-23",
   "stocks": [
@@ -12,8 +12,8 @@
         "change_pct": "+0.34%"
       },
       "foreign_net_shares": {
-        "D0": -2144442,
-        "D1": 4729949
+        "D0": -2144,
+        "D1": 4730
       },
       "news": {
         "法說": [
@@ -38,17 +38,12 @@
         "change_pct": "+0.00%"
       },
       "foreign_net_shares": {
-        "D0": -1442486,
-        "D1": 5783448
+        "D0": -1442,
+        "D1": 5783
       },
       "news": {
         "法說": [],
         "營收": [
-          {
-            "title": "鴻海營收創高卻難漲...今震盪守230元大關 分析師曝原因 - Yahoo奇摩股市",
-            "link": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxOeWY2WFhMMWFLYVV0V08ybm4tb1JTejR4NFhLcl8zZXYtVlNkLUVvSEZUUG9hSnRWZXBXeDFfMllubG1RQnBPZjIzM3JDdFIwdHdTOUp3dDVFbUVRWFQ2WnVoSTJZZzFTcXlLU2k4Ri1CYjA1Rl9EX3RRdUpEenkwSEFFUzdYOEF6emZOWkd3RDlzeDJHNm02NUtMMXplTFNRa2J6QWRTNE9Pbk9HcnFFVURwX3daYmFBQm1iN3l2OFc0eXRZQXRWck5rMHVsemFKeXlUVWRFbUotZ2Z3cG8ydGtsa19lVlkxREdILWxtSmRqa0FPV3N6eTQyenh5elZ0ZFlJZVhBTWZBRDlXUUtHZ1NyNEphSXR4TUcxVGYzbFhSNTcwZzZpWmFjdkY3TDU3VDlrVGJyVjJPTElPRHJVVHF3ZGNTY3FmMFJfcHhTME0zTk1rZnhMcHp5SlRsQkFERDNsc0UwTHQ?oc=5",
-            "date": "Sun, 07 Dec 2025 08:00:00 GMT"
-          },
           {
             "title": "鴻海營收將出爐！今收復230元失土 分析師曝僅一情況能「大膽追價」 - Yahoo奇摩股市",
             "link": "https://news.google.com/rss/articles/CBMivANBVV95cUxNTjVXZzdJLWdjOEJ5RGNrMWl1dlUtN3RWN0J1VnNmZjJqV19MdFE1ZWdnRVdNREY2N1pHRF9pODEzWEhHMTgyV2MwN3FBV3pfNkJEWTFRUlRCd2s1NTlUbFIwZUVPMkFCeGFiRlpIemI3RWhsS3diLWkyaFJseHNEUzhib2h0TEtUZXJNaWNyYUNIMk5STjBkRFZWMExEZkV4N2lIOXgycmJuSEVjNDNzWGdKcXFzYmF6c2E3bF9VSmFvbXQ4bEJIMnQ4ZVc0TGlBYTUtQmRtb0tIRzhudXpIUk94SjlJaG9FOEpETEhTcEt2MVVsVGlQc3hLSENzSkZOSklUU2J6ZE04THNvSmVfUlZQR1FPNEs0bENDV3QtZEJmcUhGdFRFY1MtejVhc2p3VzA3dmsydkFkVjBvTHMzRDJDalpQbVI2c05qQ3ZKU3A4MnEwMkhMNVRPVFBJdHBrMEpKN1VSc1RKaEo0cHVYQXhEYnhxdm1DX1o4Y0hhbmI0Qk9OQmhBVlZETkktYjh4YnVtckJ5SDhCd25vazRtZnZnandLb3Z6aDlCLTcyMXFERk45clJmcnNEOFc?oc=5",
@@ -84,8 +79,8 @@
         "change_pct": "+0.34%"
       },
       "foreign_net_shares": {
-        "D0": 10172371,
-        "D1": 3039646
+        "D0": 10172,
+        "D1": 3040
       },
       "news": {
         "法說": [],
@@ -106,14 +101,29 @@
             "date": "Sun, 07 Dec 2025 08:00:00 GMT"
           },
           {
+            "title": "緯創11月營收「噴到外太空」！網嗨「股價要破新高了吧」 分析師：關鍵看量能 - Yahoo奇摩股市",
+            "link": "https://news.google.com/rss/articles/CBMi9wNBVV95cUxNclk5VUtRcDJXdzRrRURIeWNBTm5fQWVWWmt4RkpLNVBZNmNvZXM0bnkyMDhQdlRQMnRfeW5TMkxaNGtINDVrNzF0dmoyQVFlUXRTNHZQaE0xS2d3SEdjREN0Yk1OcGp0cWMzNms0ZTh6ejJzVEpnOFVFdDNKdGRVcV8zZTRoZHhnWEhTRUlyT19SdDVTTmRDTVpma1QyYUNZTUFCaFBkNlVHS09YWk1CMkNrbzI4c0R0YXMtbk42aW90MzB6SHRabnEwTlliLVIxei1qazdNM2hvYlVldXNyQ0FSU3ZSWTFNTkNTZUh6NkFHY1ZidHNCNjRiQUN3V0NDOGluWXNTaEQycktyRGM2c1ZuS2E2Q3F0UHE4NFV3aGNBTW9fOEJlVXkzQjJtTUItQnpIWjZFMEFodGNZYkxxVHdISmt0RlVlMzhaZkx4Sl9SelJsWEx4MVNkcmM5Xzh5WGttQ3ZETG8zZFo5bWxFa3VsOWp2VjlmNVh6eFhKcjJ0Sndkd1c1VndGTFRDZjcwQTY0X0xhc0JLMWlRYWlYMVI3ODZXT2c2Mk42b3JDaTNXSTctajFFTi1jMGtadjI1eXBIeHVoaEFNbkdWR2tVS2Yyb1dYLVFvM2o0NW1BUGpOOUg1TXFxN0ZlZ0tzaFpFZjc3emQ0WQ?oc=5",
+            "date": "Mon, 08 Dec 2025 08:00:00 GMT"
+          },
+          {
+            "title": "狂刷營收新高卻兩樣情！緯創、緯穎、緯軟財報公布 「這檔年增158.6%」卻慘黑 - Yahoo奇摩股市",
+            "link": "https://news.google.com/rss/articles/CBMihANBVV95cUxNMlVfMjJENlBUdmZuVXpKVks2Rm5kYWsxVTJ2b0FiRWR3M3ExbFdoQ0k1bjNtVm13SjZvQWZtOWhYVGtjZmJHbjRqMHhyNzVWRm1heWVxQl9oZ09TRzQ1Q1g3R0Znb1lId0JzVmFjOVhfTDUxdjZmbzlZRDBTZUd0UkkxZGNoS1RTbS1mcGd3bExtOUF1YjJWdWllb2ZmV2FTdUtGUUV3UTQzemo0ZGhPeUpyb3UxNnpsMnJHeWtkbFN2ZUdOQWpNMGROVFpsbzF4XzJka2pFdlV0MV9mSzI0RW94OHFDa2VWYWE0LW1UdG5zR3Y2MkwwcWZGWHlnUkc4QksxSDFlYktCS09DNFBIcjZOUDJqLVhrcVl5MmtKYXVyMzNkQzRDTUI0UEQ3TXhZSjl5Z3JQYkxTd3JNdEdJeWpoN1BCWW5sM1BCaWNkWVViRnRhcHBjMnNhS1ZCcC0tLTZuekFwQjBheEdPSlQ3d216aTd6RmNoVGZqUzY0akxnZ0xY?oc=5",
+            "date": "Tue, 09 Dec 2025 08:00:00 GMT"
+          },
+          {
+            "title": "緯創10月營收1850億元年增九成 連6月超車廣達 - Yahoo奇摩股市",
+            "link": "https://news.google.com/rss/articles/CBMisgJBVV95cUxPLTR0UzZ4T1JFWDQ5MTVzMW42Yy04ektKclJwcWdkV2xia25FQVhFV1dMV2tkMmdLX3FENmdEUVdCeXFNWkt6aDdOdVU1OVU3TEFSVnV2d3V3QVY3WmRpdldjU1F5bVdzUjZpLS1tQ1ZGQVg0WlRmNnNKbENFZDd0VmZnbG5abWR2eVotMThPUThQdndONE5lR0JWc3RGMjJwZDF2MEYtSlRJRXhqM1RXU3JQTzJoa241MlRNek05TGtxNDFkYWh0eVhNQ0IwcXROZC1FdTRQTzA3TFpJSnNkWTUyVldRcEVETThQQUpMUWlBSVF4dmdVMVhVYURySUhWcHlSZXF5c2p0TU9ucElRWXlJeFRkU1hoUW5JemVSWjZkb21PVlZjQXUwbHIyeTBfMkE?oc=5",
+            "date": "Fri, 07 Nov 2025 08:00:00 GMT"
+          },
+          {
+            "title": "【即時新聞】緯創(3231)大單出貨看升，今年L10機櫃營收拚年增150%，這「6檔概念股」今日走勢分歧！ - CMoney投資網誌",
+            "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPakE5YW1HTm81dkxDVGR4TE1xRGZjZGd4SzFoZnhpTmtqS3Nqc2lHM2NlRFZ0NHhEbmZDdnhvNUROSzZybzhFcUxJZ3ozdWNQVm5IbnBBa3BPMUt3dnZ4N09uNlpjM2NyNU1jM0lzbkVxd1hEMU8wRTR4SDlzV1pWYTBuM1BaRGhsVGRQTndwS3c?oc=5",
+            "date": "Mon, 08 Dec 2025 08:00:00 GMT"
+          },
+          {
             "title": "11月營收年增81%！「三星電子通路商」股價飆破9%登量價雙增王 華邦電、緯創也在榜上 - Yahoo奇摩股市",
             "link": "https://news.google.com/rss/articles/CBMikwNBVV95cUxQbUtKZ21yUjVQMldvUF9nRHRKQklNYXl6TVN6Z0FnZ3JaZnNaWmNHSkhHdmVtcnhyMmVmVzd4eERXdjRhMmNrcjRubzNzUWJ2a0ZNYlUtZWJzc1pRcHhQQXFvTF84bDVsMzlfS2M4eVhBNnIyaWRHLTcyY2NCSDRESlBQSE5nQ2dBR0VwOWp0eUMzX0thalFKaTRlWExXUUdDQXJKZ1IyeG9ZMzdwVkRyaC12aWFrYW9hcHlmQXppeFBfR2x6cnpyN3BucVp5aFEwYVc0RDRiemp1bUxiVHV1X3RpWlhEVUQ1Zm5SQW96SkhId0FUWXdOeUdfaldmZU9fSEdJMWhQR05wRkhxWkRQb09fd3cxZldoNTlDYnQwc0tKSW5CcEgxZUNTWDZLcHZ1YjNWbkl6blhDWUlLN0d6UHFEUGJIdGFoM3ZXM1FGeElDZjhnWUU1djBJUXQ1ckg2ckdpWXpnVmxHTWhlV1hSSW5OWm1naEN2dC1SVzVFSFVvakJUNTRyRkg3YTBDSDJQeXUw?oc=5",
             "date": "Sat, 06 Dec 2025 08:00:00 GMT"
-          },
-          {
-            "title": "【即時新聞】緯創(3231)連兩月營收雙位數年增，AI伺服器成長動能續旺 - CMoney投資網誌",
-            "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSFo5Mmt4ZXRKTkU5NVJWUGN0a3N4dUhfemVTRElkQkRKMUV1dTRYOThPLTliV29KbUloWDgtanVKMmVxNUxGQ3Y0V1lkQWtwaUgyTFZFeHd4bXlpY1lRQTN4NTAwMzFyMm9IYkRVMllITExSODZRWlU0QXpzemdTYjdtUW9PSWVfYzkxZUNYSjM?oc=5",
-            "date": "Fri, 07 Nov 2025 08:00:00 GMT"
           }
         ],
         "重大訊息": [
@@ -145,11 +155,6 @@
             "title": "【即時新聞】美國稀土公司股價11月下跌原因揭露，投資人需謹慎 - CMoney投資網誌",
             "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPem80bXRtS2ZnWmVTNGZFVmdDZDBrYW1kVGdOek1OcVE0c2VkbmtpTlNYRnI2SnR6MmEtUnJNcERfbHlxN0xKOU93eF9LdzBvSWFoOFBuU1VBWmRIY1JUcElQVHJwVzZ5Y1dfN0lvS1pQeVZUUzU4QUdvT2dFYldzTUdfdVk3dExkeC1tXzZtZ3A?oc=5",
             "date": "Tue, 09 Dec 2025 08:00:00 GMT"
-          },
-          {
-            "title": "【即時新聞】美國稀土公司股價11月下跌原因揭露，投資人需謹慎 - CMoney投資網誌",
-            "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPakE5YW1HTm81dkxDVGR4TE1xRGZjZGd4SzFoZnhpTmtqS3Nqc2lHM2NlRFZ0NHhEbmZDdnhvNUROSzZybzhFcUxJZ3ozdWNQVm5IbnBBa3BPMUt3dnZ4N09uNlpjM2NyNU1jM0lzbkVxd1hEMU8wRTR4SDlzV1pWYTBuM1BaRGhsVGRQTndwS3c?oc=5",
-            "date": "Mon, 08 Dec 2025 08:00:00 GMT"
           }
         ]
       }
@@ -163,8 +168,8 @@
         "change_pct": "-0.19%"
       },
       "foreign_net_shares": {
-        "D0": -5492004,
-        "D1": -6817905
+        "D0": -5492,
+        "D1": -6818
       },
       "news": {
         "法說": [
@@ -184,11 +189,6 @@
             "title": "廣達11月營收1929億元年增三成 改寫歷史新猷 - Yahoo奇摩股市",
             "link": "https://news.google.com/rss/articles/CBMisAJBVV95cUxOcTFPaDhhYkcxSFBkRmxLOFNibUlwUjJZbkpzMXU1SGp1Vy14RFVkZ2tWdExkZmt6ZG1IX1BXYVRtSGlUOWxTekNWaUV6a3hGSV9VVkNNMG1FVTVucHB1NUNuMVdkMUpqd3daV0xLbVEwZW05dTdKbUlGTUVRTlJxa3pIRnZ1MnIzaFNrdERDcldVNVo4NXQyZnp3VFRXbFhsRnVPdlJFYUhFRUI0eDZDNElmSllUNkY3MmR3eGhhWXd4N2NZbHgwX2FMR2tyMjhxLW5PWEktdHQ5SVN0M2dTeW1BMjlJbjJKV2RxYVY3UEd1U1FWN1ptY2Yzc1dyNjFQLVEyNHlCd3RSc1BFc1VKaFZpYnZqQm53d3VjdVpZYUFfaTRpaGZXTk96X29SR3Vk?oc=5",
             "date": "Mon, 08 Dec 2025 08:00:00 GMT"
-          },
-          {
-            "title": "【即時新聞】日揚(6208)10月營收創近三月高點，跌逾14%籌碼依舊弱勢震盪 - CMoney投資網誌",
-            "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOWU1sVVY5REg5QWNrWWZDOTZWaXR2dzNFa2ZKX0htNG1TMmtLWFkxd0hIZkxOaUo2bUpDMl9rUFd0Y1JPcU9tZmF6Rl9Vd0NOdC11MXFtYmRjalRMNzBPYlFJeldzTXZCVy1ZVVh5ekIxdEhLVXhZMDlCTVBvd1Vyck5PbkRCWkdPcldjc2owUHc?oc=5",
-            "date": "Thu, 20 Nov 2025 08:00:00 GMT"
           }
         ],
         "重大訊息": [
@@ -223,13 +223,13 @@
           },
           {
             "title": "【即時新聞】美國稀土公司股價11月下跌原因揭露，投資人需謹慎 - CMoney投資網誌",
-            "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNaVRRa1JweTBJQWlUSGs0MzVlX0VYTEpvYTVGWmc4MnJMLVAwUUM4V3dkUEJRSUtaWElQQV9GOV9CSFhJcDM1bWhmUEQ0cFQtRkoxLXNLbW5jNnMxOVM0LTh6ZVdFRkpUOWJ5M2RDRmwyRFZTS3Q5MDdJUzFreDNJR29UbnpWNjN3bmtPUDBzUXU?oc=5",
-            "date": "Fri, 19 Dec 2025 01:45:36 GMT"
+            "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQQlNEVUNsNm96LXJ3elZzWFo5TFRaMWZEcHMzU2NXOGcxelB2TjFlV3hIMUkxT1BWM1J2ZERIaXAtT3Eyd25qZHEwNkhYNERRR29xNno3cHoyNmJ4Y0dlZEhNejhwN3lmeklTYUpvUTlLTkNObHZURVBYWV90aHl1Nm5laXZOV0x2N2tVQno0TkU?oc=5",
+            "date": "Wed, 17 Dec 2025 03:10:29 GMT"
           },
           {
             "title": "【即時新聞】美國稀土公司股價11月下跌原因揭露，投資人需謹慎 - CMoney投資網誌",
-            "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQQlNEVUNsNm96LXJ3elZzWFo5TFRaMWZEcHMzU2NXOGcxelB2TjFlV3hIMUkxT1BWM1J2ZERIaXAtT3Eyd25qZHEwNkhYNERRR29xNno3cHoyNmJ4Y0dlZEhNejhwN3lmeklTYUpvUTlLTkNObHZURVBYWV90aHl1Nm5laXZOV0x2N2tVQno0TkU?oc=5",
-            "date": "Wed, 17 Dec 2025 03:10:29 GMT"
+            "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNaVRRa1JweTBJQWlUSGs0MzVlX0VYTEpvYTVGWmc4MnJMLVAwUUM4V3dkUEJRSUtaWElQQV9GOV9CSFhJcDM1bWhmUEQ0cFQtRkoxLXNLbW5jNnMxOVM0LTh6ZVdFRkpUOWJ5M2RDRmwyRFZTS3Q5MDdJUzFreDNJR29UbnpWNjN3bmtPUDBzUXU?oc=5",
+            "date": "Fri, 19 Dec 2025 01:45:36 GMT"
           },
           {
             "title": "【即時新聞】美國稀土公司股價11月下跌原因揭露，投資人需謹慎 - CMoney投資網誌",
@@ -293,7 +293,7 @@
     ]
   },
   "fubon_zgk_d": {
-    "date": null,
+    "date": "20251224",
     "buy": [
       {
         "rank": "1",

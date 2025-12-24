@@ -315,6 +315,7 @@ def parse_fubon_zgk_d(limit: int = 50) -> Dict[str, Any]:
     try:
         html = fetch_text(FUBON_ZGK_D_URL, encoding="big5")
 m = re.search(r"資料日期\s*[:：]\s*(\d{8})", html)
+  date = m.group(1) if m else None
 
         soup = BeautifulSoup(html, "lxml")
         table = soup.find("table")

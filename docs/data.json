@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-31T17:50:31+08:00",
+  "generated_at": "2026-01-01T17:50:06+08:00",
   "latest_trading_day": "2025-12-31",
   "prev_trading_day": "2025-12-30",
   "stocks": [
@@ -31,8 +31,20 @@
           }
         ],
         "重大訊息": [],
-        "產能": [],
-        "美國出口管制": []
+        "產能": [
+          {
+            "title": "台積電悄悄開始量產2奈米晶片！N2製程提升效能、擴大AI與HPC產能 - news.cnyes.com",
+            "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9fWnY5cUs3U3ptNmFUU2U3MUI0TWUtdHk1XzFSdEUtSk5ZcnRfcEVLdVhIVk9lbk5xWURfcnJ1bmxFOGkwbnM4ZVYtUkVEYVk?oc=5",
+            "date": "Tue, 30 Dec 2025 03:41:12 GMT"
+          }
+        ],
+        "美國出口管制": [
+          {
+            "title": "美國放行！台積電(2330)南京廠獲准輸入美製晶片設備確保2026營運不受影響| 優分析 - LINE TODAY",
+            "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4wYXZPX243TGs0TDJ0M0NNOGo0TUl2LW9DdHYyMzBSQmV1dXBaTTVSSWdPOHJUZzJ1RER0THJzLUROOWQ3SzFMcmQ2dGFlR1FISnZ3ai1n?oc=5",
+            "date": "Thu, 01 Jan 2026 05:11:52 GMT"
+          }
+        ]
       }
     },
     {
@@ -60,11 +72,6 @@
             "title": "鴻海營收創高卻難漲...今震盪守230元大關 分析師曝原因 - Yahoo奇摩股市",
             "link": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxOeWY2WFhMMWFLYVV0V08ybm4tb1JTejR4NFhLcl8zZXYtVlNkLUVvSEZUUG9hSnRWZXBXeDFfMllubG1RQnBPZjIzM3JDdFIwdHdTOUp3dDVFbUVRWFQ2WnVoSTJZZzFTcXlLU2k4Ri1CYjA1Rl9EX3RRdUpEenkwSEFFUzdYOEF6emZOWkd3RDlzeDJHNm02NUtMMXplTFNRa2J6QWRTNE9Pbk9HcnFFVURwX3daYmFBQm1iN3l2OFc0eXRZQXRWck5rMHVsemFKeXlUVWRFbUotZ2Z3cG8ydGtsa19lVlkxREdILWxtSmRqa0FPV3N6eTQyenh5elZ0ZFlJZVhBTWZBRDlXUUtHZ1NyNEphSXR4TUcxVGYzbFhSNTcwZzZpWmFjdkY3TDU3VDlrVGJyVjJPTElPRHJVVHF3ZGNTY3FmMFJfcHhTME0zTk1rZnhMcHp5SlRsQkFERDNsc0UwTHQ?oc=5",
             "date": "Sun, 07 Dec 2025 08:00:00 GMT"
-          },
-          {
-            "title": "鴻海再寫最強單月！10月營收8957億元、年增11% - Yahoo奇摩股市",
-            "link": "https://news.google.com/rss/articles/CBMisgJBVV95cUxNM293X3ktVndDMnBjWl8xUTFVUGVuM2RHczRfVVFOQlAxNlNHNmYxd3IyMmhhUE5LbDJ3SU5Ca1NvbDZQd1VsU2tXd25QQllfSGlKSkVEVU52WGt3ekluRDNMLXpzcDF4aUZGY0FNNVB2NE1yTEFrWUJxQVNacHlqTk1PZ2pzWXhYcFFuZ0xyYjVnUS1SV29hR0xLVEh5Nk9NYXpid1NiajdnTHBPZHJJd3VzWFJyUk1zOFBkQjZNUEcya2YzUWNlNjFxdGlyZnJGSEJYNUh2YW1uVW11SHp1UmN5X2JjSW1QS29hVlZYeHRGNXNmVnlCZ29EWFRoNndOSW5KMnVXTzVSUkNjbHJheGJRZXAxT2NHUEhxQjRLZnk2WTBPSHJFQ3ZobTh2ay13aGc?oc=5",
-            "date": "Wed, 05 Nov 2025 08:00:00 GMT"
           }
         ],
         "重大訊息": [],
@@ -96,18 +103,23 @@
             "title": "日期： 2025年12月27日 分析標的： 緯創資通 (3231.TW)｜理柴知道:法說最速報! - 方格子 - vocus",
             "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5rVXpsbkR6VjRFMGRFeDI3bUU2YUhWeGd3T2RQdGQyRWVqSVNNTmIyWjdFQ09zSGVsWWxWQnNTZkhSRUxmWGppRm91aGVkUGV5NTJnMVpOZUNENjJTR1HSAWNBVV95cUxNX09GMEVWS1lKbmZPcVEtUWpYSVJmMU9zMExLMnoxZUl1emVDN2ZySWlnTmVGRlBMdjhxamRHY2JneTZqcmFhYXNiRHh6S2ZwaGN2bjJrQThGM1UzUHU5bXRFU0k?oc=5",
             "date": "Sat, 27 Dec 2025 09:52:24 GMT"
+          },
+          {
+            "title": "法說行情點火攻漲停！國家隊囤貨「這連接器廠」破千張 緯創11月營收創高吸金2.69億 - Yahoo奇摩股市",
+            "link": "https://news.google.com/rss/articles/CBMi2ANBVV95cUxQZnU1YnhkV0pDT3hYbncyaDJsaGVCU2wxaVBXbUItdkc1U3JKSndRLWxESUFLbmRJTzVwR0RKT0x1RThMU2ZMNXdXTFl5Nzk4Mk9KSnlGOW50QkZsM2pWcmFLNExWNlVrcHhSVGNTd08xNHhDcUJ3VHJUc1dSZjM0OXhPSzExRnVDZkVSU3lFNS1acjQteHB0Q0RscEhNZ3Y0RHVkbWRCSjN3aURNVS1TNWNCRTRCbWpjN19mSm90ZVpHMjNBYXEwUmtxNlZtbFNtbHRuaHkzMGw2dTdieGpSbXRIdjZVTF9TUFprYlhoLWVHeUdBR2ptd3BEaWJvZFB5OXh6S0YwOVplUks5X3NOZ0lITzVWdXlOMzZjV3VacU1NNmxyTlp6QmJoMHN3dW5HOXlVb2pXX19yRGd6N1dhN2dPU25Yb0xnU1laRUZQQ2NfcF9iTExpZjhNUzJsWnh1QWNSRE1EeUNTcDBMTTVvUHQ2eGxRNUc2M3FVWjVuRzlQWlZqU0dudUFHekFWNkJEQW44NlllRnBmc3R1cWV3bnN0cF9kY25uWFZJWmpLY1Nwa3YwOE1SR1M3ZjRYeUE1UzBaVUJ4TXdBSXViQXhMSGJhQ2hfVHlG?oc=5",
+            "date": "Thu, 11 Dec 2025 08:00:00 GMT"
           }
         ],
         "營收": [
           {
+            "title": "AI伺服器鏈11月營收狂飆緯創暴增近2倍領軍三雄齊創新高｜股市話題｜豐雲學堂2025 年 12 月 - sinotrade.com.tw",
+            "link": "https://news.google.com/rss/articles/CBMiywNBVV95cUxNRE9RUl9RcjBTM1JXa3NvRHBKWnRfaUtJazh6OW16T3RYQUtrTW0xQkIyOEJqVmhkc1dEV3F0NHN2akFYOVdkLWZ1VDVlajl5V2pzdVFYcUFNVEhYTmE3T0pxZTIxVzRRUnB4TFZNZnk2TnBrMW1KUzFzTGU4NGNQVXpRX052V2FOYnZEbFJxdEFSaGJBQ2VnakJ2ZEdfZ1hTOThPWWZOa29oT3JtUTJpbGN1bzR6TG43dFRrUktFVG5TMWlKUnAxSnRYY1kxYmJ1eEtCUjZFekxlLXFiM01NNGd0Q3RtRVJVZGprLUZpbmNqNXotOWZWU21seXZRbGgybVBEbTRlUjVNcWxpVmZMcXd1VzNWUUNRVDliNXdGUGRaeHFDS3N2Wjk4YW5Bc3FYcVRFcDNlQjl3djZmTVl1V0dDMXI3OGFpUGh4VjVvS1BmT3VCMDZjeEZxQ3Jjc2ZEeFBiVGlpczZ6S0hLcXF0a19STnhENkdkeVBJTEVRbmdGdm04THpiMTRQSF9EUnlfMElKVkEzT0lWWXdmS2pZWlNtR2RfdjF4d3RmU00zbHd5ZzhyVnVlRTBPTW9jakhEV3hOX2gybFV4SnM?oc=5",
+            "date": "Thu, 01 Jan 2026 05:50:29 GMT"
+          },
+          {
             "title": "緯創(3231)營收狠甩廣達，利多炸裂股價卻「軟腳」？3年噴4倍的老AI還有戲？一文拆解關鍵背後 - 今周刊",
             "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUlZWWDUwdGg1d2xPTzBHSV9yVDVQczdaSEd6TnZzSlFDQU1xOGNtXzBaMTNXMmYtWHZOWnFPSEZSNlFJT2hnYWtHcHdBYVVoaUZoeDZRM0U0eE5VWDBaRFhBczV6U2Y5MmxqcHRaZGhXWURhVTlMRzY0cWNpcDlnMA?oc=5",
             "date": "Thu, 11 Dec 2025 08:00:00 GMT"
-          },
-          {
-            "title": "超狂！緯創11月營收2806億元年增194% 寫歷史新高 - Yahoo奇摩股市",
-            "link": "https://news.google.com/rss/articles/CBMitAJBVV95cUxPaHBwSnR2eFctRmphLWk0TW1MTE9xdWU2LS1lZ0dEOVpxV05pRWJndXRjSE5McEEybVBYMVlmNkhOTVlYUFdJUU9TSWFzTU5QQkJDMGlTc3ljdUdWbWwyU0xfQnNrT3VEam5mOWk3dFdfbXVFd28zVFZuZ0dGRDF6Zy1QOTlSX3ZUVE96LVVwRzAzdlk5LWZXUjdfYWZ6UkN2LVRPTldFQ283dUt6cFhVREgydXE2dXFsejNJV3AtaXU3N3dVZVhzLTZPUThTTy1TVmFiS0RyU0ZmczVGcnpsVGFKNU1Vc25vNlNlN25xdzBrUzd3UHRJcUZZdlZ4MW1vYy14R1NLU1dMeTRtZEh3dnN6QUE3YUJ1akFjcmhyX3ZrV0hxQzhsdzlTb3dKd2hHWGY1eg?oc=5",
-            "date": "Sun, 07 Dec 2025 08:00:00 GMT"
           },
           {
             "title": "為何緯創營收創高，股價卻軟腳？專家曝市場2訊號：多數人被嚇到出場 | 張庭維 | 新聞 - 風傳媒",
@@ -125,19 +137,19 @@
             "date": "Mon, 08 Dec 2025 08:00:00 GMT"
           },
           {
+            "title": "歷史新高！緯創11月營收年增194% 外資撤15.8億脫手萬張...網猜：明天大回補？ - Yahoo奇摩股市",
+            "link": "https://news.google.com/rss/articles/CBMi5wJBVV95cUxQODZUcW1HSFBQVVhnOTQ5MTFRRlFIU2ZPRjBCY2xxV25DQlhLN3JYVDNWNndIWnZmdEtCYTR2bzNZcnl1cF9hX29qdFMyRGJJSHltRk51Yk1va3p4VmtMU1V3TWRkRUJ2S043Y1RXYzEyOFFBS3Nsd0FaTS16SDYyVC1xNHMxeTFMN0dsYkE2QXo5Ym9FSXFJZkRsWlp6UkJNM2tsS3VUNTFldDBZNkFndHBHZkVGQUVfaldVb3JEME5BampFcFpEd19ZSUs1MlEzV3pROFV6RThOSndaRmNPWVFvVy10My1RRThZWGRRdEV5WkxrZ1hya0ZtZ1RtaU1zdnRlNTF6STVsdmhXT3VVMUlEbjR5SHdTbTM0Z1Bwd2szZGdvMnE3NURZVFJnMEdUaDlyRDNzRUJOVmtwSVRac1AtbVlPQkJJNFJXRk1lV2lYZzdZWG9pR1hkaTVpVGFzMWw1aUhtdw?oc=5",
+            "date": "Mon, 08 Dec 2025 08:00:00 GMT"
+          },
+          {
             "title": "「電子二哥」緯創11月營收超車廣達 小漲3%後回落 分析師示警：短線有壓 - Yahoo奇摩股市",
             "link": "https://news.google.com/rss/articles/CBMiygNBVV95cUxQRVYtXzhZS2p5cm9jZVNuSGl2ZXFQQW5iQllhRVM5QmkzeldMSTlfaTZEWml4b2o4S2NkQUI3bTBlVTRkUDd1d1lwVldxWlhrVEhCOVdOTThVa3VBcl9SODM0OUYzd1YxYXdUd2JzZFNpTEwyWXQzVUd3dTNMb293WGlXTDZ1TlQ0cVNST1RpcHB0VVVnWWNjRGRhZGZwN2dSb29vZk9Td3oyLVRKUWViSVNlV2taSGFHOS1Cb3h0OFhYWTlYcmVLRVdXNnVHX29xY3cycGxsQzVlbmZ5VXoxbERzMmxzR2wwMTZJeWNHM3lRMTRmaWpNcEQ1aFQ4cDEwUTF3Q2VSMW5UcFRrZ3ZZclNGR0RZNnpIdWpqVENLOTg5Y2FpZUM2ZDExOFB4RlVuQnR6R3A5dVdLVldKd0tPQWFVOVg2cG55eDlPdmNtYVAtWFYtZzVTd3FmWEd0Y0RnYkpZSmlza2JXSUpNeXhVdHFMbmlEOUZxa2pNTkQ0cWpaZEtqN0lqMW1SOHJxaFY2QlJHS0pVVktoRFNmcUc4UWtjQk5CWGh2TTRTbEN2VlVyelJwckN2d0hnYTNDWWZmTDBjUTNYaFpQQQ?oc=5",
             "date": "Mon, 08 Dec 2025 08:00:00 GMT"
           },
           {
-            "title": "電子五哥11月營收比一比！緯創迎歷史新高 連續7個月超車廣達 - Yahoo奇摩股市",
-            "link": "https://news.google.com/rss/articles/CBMimANBVV95cUxNTXlVLXptcW5xNDhlUUk2bHZYTXYyb29fUVg3a1JiQmNZbzFlUkd1dkhMVmlSR2FOWElOOFh2cU1HRzFPVFIwSTdGRlB4c21VeG5Ia21vZjBtZEJNUVBWUFptakl5anNtNUNTMU9MTjBmYUNYWjJ1Vnp6RkxEbjJUVWpkQllQUDhUNzZLdjIxMXJuWEtkdWRXYWlZZzBYOUNmTEJ3bnItdEZvZkxSX3VaTlV5YlFBOHBlVGpmUnNBTko3c1FaTkZOQWIzMFlnMmZidWhwMVJMNE01X3ViX2FNbGkyZnFBLXYtbmlLUmpZcVpWUXpFWXpCYTFXNEgzZG1uOHpYVzExcy1hcFVjTE10NnRjMWNOWFM2N0F2cXdHQklJUDBjNXlCallTRm9hMVlwRXVReXFKc2FvNXFhTWtQUFFmYWxJR3N0dExsSFpKLUtfYk5TcEVhQ3gxWU82MnJ6cnBROVRIelp2NEw0M255SVM1elREVlZqOHBYZzAyWjVHbmVNXzhtbHNOUTA2Rm1iRGxvV1ZJZFk?oc=5",
+            "title": "【即時新聞】緯創(3231)遭外資連2日賣超逾3萬張，11月營收年增近195%創新高 - CMoney投資網誌",
+            "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQS2JyZi13b2JwNWw5UzZIMmpXUWFBczFyOFJ2SWZMS1JXWTRWVTdoemZVMy1JdHF2YUZ4YkRMYjl4QVRidFVsSi04cVhYRFNPblcybm4xelVmRGZVVUsxMWJlVUF3ODNVV2VYdmwwV0VzS3RLcGZQZkkzOHRRenExbmJicXdha1MwNE5FQ3k5Tmc?oc=5",
             "date": "Wed, 10 Dec 2025 08:00:00 GMT"
-          },
-          {
-            "title": "【即時新聞】緯創(3231)大單出貨看升，今年L10機櫃營收拚年增150%，這「6檔概念股」今日走勢分歧！ - CMoney投資網誌",
-            "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPakE5YW1HTm81dkxDVGR4TE1xRGZjZGd4SzFoZnhpTmtqS3Nqc2lHM2NlRFZ0NHhEbmZDdnhvNUROSzZybzhFcUxJZ3ozdWNQVm5IbnBBa3BPMUt3dnZ4N09uNlpjM2NyNU1jM0lzbkVxd1hEMU8wRTR4SDlzV1pWYTBuM1BaRGhsVGRQTndwS3c?oc=5",
-            "date": "Mon, 08 Dec 2025 08:00:00 GMT"
           }
         ],
         "重大訊息": [],
@@ -145,13 +157,8 @@
         "美國出口管制": [
           {
             "title": "【即時新聞】美國稀土公司股價11月下跌原因揭露，投資人需謹慎 - CMoney投資網誌",
-            "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQS2JyZi13b2JwNWw5UzZIMmpXUWFBczFyOFJ2SWZMS1JXWTRWVTdoemZVMy1JdHF2YUZ4YkRMYjl4QVRidFVsSi04cVhYRFNPblcybm4xelVmRGZVVUsxMWJlVUF3ODNVV2VYdmwwV0VzS3RLcGZQZkkzOHRRenExbmJicXdha1MwNE5FQ3k5Tmc?oc=5",
-            "date": "Wed, 10 Dec 2025 08:00:00 GMT"
-          },
-          {
-            "title": "【即時新聞】美國稀土公司股價11月下跌原因揭露，投資人需謹慎 - CMoney投資網誌",
-            "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPOWpWUDVNT0Q1M1ZmZG15TlN5SjdScFE4QkVqQkVEZGQxTzBmc2RvMnRNaXZHMm9zR3VSLUpXSmFrUmVmYnZ4Z0c4eV9sUXI4bmw5TXFJQ3N1N3pWNXd6aGd6UVNOQUNpTGtZRFRIYnd0Qm1senR3VDdocHZObWloek9vWnVhaDA4OTdMZ3VJYXA?oc=5",
-            "date": "Mon, 08 Dec 2025 08:00:00 GMT"
+            "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPem80bXRtS2ZnWmVTNGZFVmdDZDBrYW1kVGdOek1OcVE0c2VkbmtpTlNYRnI2SnR6MmEtUnJNcERfbHlxN0xKOU93eF9LdzBvSWFoOFBuU1VBWmRIY1JUcElQVHJwVzZ5Y1dfN0lvS1pQeVZUUzU4QUdvT2dFYldzTUdfdVk3dExkeC1tXzZtZ3A?oc=5",
+            "date": "Tue, 09 Dec 2025 08:00:00 GMT"
           },
           {
             "title": "【即時新聞】美國稀土公司股價11月下跌原因揭露，投資人需謹慎 - CMoney投資網誌",
@@ -175,6 +182,11 @@
       },
       "news": {
         "法說": [
+          {
+            "title": "2025/12/28 (2382) 廣達：AI 伺服器動能強勁但獲利稀釋，技術面進入超賣區｜理柴知道:法說最速報! - 方格子 - vocus",
+            "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5NcGRHdlVqaVM3Z2kyX2U5MW94Vm5vWldPX3V6clphblJuakNXVGJqY1U5b3NhYnROWGlqaVBvMjlnZVlTM0xCUHpldS1IaC05VC1CRVNJaWxnT3MtSVHSAWNBVV95cUxQX3hEeWxPNjdqNUFpM0NRMWFnQjc1M1g1M3BkSE15TFJEZ2x5SnNzMVJucnpYcjNCTVRTeWh1MFdyNlN1WWRFOWJqMlBqLUxVZGpvUGZSNXJXVU5HcE9wb0UzTVk?oc=5",
+            "date": "Sun, 28 Dec 2025 15:13:59 GMT"
+          },
           {
             "title": "(2382)* 廣達電腦法說會 2025/08、廣達電腦財報、廣達電腦展望、廣達電腦財報投資亮點｜理柴知道:法說最速報! - 方格子 - vocus",
             "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1fZWl0OHlNM2dBS21FcFFCUGtheC1TeGFYcmFYOTVLNHhDLWpybU85eVB6WWJSTkYwOHdwZDFURl9iZktIcVNHVzUyYlJQUEx4S1pIT0pEQVljOVhpblHSAWNBVV95cUxNY1NXVjFkOXVncElGWWFjOUo5TEFWQXRkT3FSaEE2cTdBUFY5R2VjdFdEOFpMRTcySmc4WWNWbmVlbEhnSzRwVzhtc0x1LVpjaEdyQUlUcnJ5S19pNWhuMmE3X28?oc=5",
@@ -205,12 +217,7 @@
           {
             "title": "【即時新聞】廣達(2382)AI營收創高、明年迎放量拐點，法人看好2026年每股賺逾22元 - CMoney投資網誌",
             "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQVhfYzhVZkhtMmRCcFlPWVgwYUlvNEVCYXRkcEZiYmZ1SXJHb0pHaEZwTzQtclRZMlRqMHdkd1F3RUZtS2NYQkw2dy16NzhXWDFWOXlkSHVLandzT0RfQ2VJRnV2eUttUWpuc0tKdXJ3V1BCUVlRQUNoak9VNFFvbEFkeGY2RnhOWkk1a1dxcXA?oc=5",
-            "date": "Tue, 23 Dec 2025 01:50:20 GMT"
-          },
-          {
-            "title": "廣達11月營收月增11.4% - TechNews 科技新報",
-            "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1jVUowYzd4alJjNjIyNkNGUjU4NVVQNEQ4S2dKOUZEdjZwbDNCUl81c3NSek5hT0R5RDlObjFrekN4M3FyTmc5S2ZzeGJ2WENQSHRYTFpLNm5zREpFRzVXS1RLd1JWalo2NGR4bUpWQ3RGT2ExcGgwQTVnRVU?oc=5",
-            "date": "Mon, 08 Dec 2025 08:00:00 GMT"
+            "date": "Tue, 23 Dec 2025 08:00:00 GMT"
           }
         ],
         "重大訊息": [],
@@ -218,15 +225,10 @@
           {
             "title": "豪砸百億衝美國AI產能！廣達遭潑冷水 投顧憂市占鬆動...改挺「這2檔」 - Yahoo奇摩股市",
             "link": "https://news.google.com/rss/articles/CBMinANBVV95cUxQbW4zdmJnNGFaTXd4Zm1ZcmZ0ZVNpWk9EZ0tDM2J2dnV3TE1vRjhlQkhsQ1ZvUnhOTjUwTmltc3ZCZDhrOXUxbU1vcFpLaUk0TFp1NmNaVFQ1akRDVWtZVTNGWmNzYUMtbWNSd2V5NGFWaG1UQ1lmbTZ1ZG1qeXZGMjBXUzdKOWpXX09ZZ3R1elR0V0tVYkVxWDF5aW5XX05WQ1RJMENhMGwzSHl1eUtqaHlXTGVJdDNPVTRVaUtUMmhXREZHbTJmRkVTZllsdjBOR2UtQTA2SE05bi1LSXpyS09ZT3hEazlfUnBEbmdrRmprRm9xNjBlVDF4S3FmWUVYV0lVbXA0dVRKMFJ4b0kzWl9LdGs4X3NLM0YyLURMZ3F6eWtPRGh2UmFCQmIyQWJ6cm9wVEVzUWo3Sm5MRnV4bmRUaHVUMmVJV3JOb1JQSVhGSGhwNmtpNFdwaU1ORTBFbjM3UDRjMjRZWHRnTFZTNlIzUW8ydFFod1RCa1hlLVNTcW12YngydHk2ZkFoRGIwTnNHWUpKRjJrZFVi?oc=5",
-            "date": "Fri, 26 Dec 2025 02:06:47 GMT"
+            "date": "Fri, 26 Dec 2025 02:10:15 GMT"
           }
         ],
         "美國出口管制": [
-          {
-            "title": "【即時新聞】美國稀土公司股價11月下跌原因揭露，投資人需謹慎 - CMoney投資網誌",
-            "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxORjBENXpWWUY1SUZSYnA5R29zLVBZWWZzeGlOUDhOVUZQd2pYSElVeXIySUpOeDF2Vk1TMkpVTkMxUlViLU9HVmpSclQ5Y3V5RENQaThSRWVqN3pOM1dQLUV5ZGpycFRIam1LQll4SF9VSWM1UEtKcGUxOUJmNHhodnROSDVTZWZHbTEtT1RncHc?oc=5",
-            "date": "Fri, 26 Dec 2025 03:17:40 GMT"
-          },
           {
             "title": "【即時新聞】美國稀土公司股價11月下跌原因揭露，投資人需謹慎 - CMoney投資網誌",
             "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNaVRRa1JweTBJQWlUSGs0MzVlX0VYTEpvYTVGWmc4MnJMLVAwUUM4V3dkUEJRSUtaWElQQV9GOV9CSFhJcDM1bWhmUEQ0cFQtRkoxLXNLbW5jNnMxOVM0LTh6ZVdFRkpUOWJ5M2RDRmwyRFZTS3Q5MDdJUzFreDNJR29UbnpWNjN3bmtPUDBzUXU?oc=5",
@@ -243,9 +245,9 @@
             "date": "Mon, 22 Dec 2025 08:00:00 GMT"
           },
           {
-            "title": "【即時新聞】美國稀土公司股價11月下跌原因揭露，投資人需謹慎 - CMoney投資網誌",
-            "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQXzJOYTcxVnFYSkZXcHZKdlZKZk91RklhcUlhM0ZyeG5LTjJpVnJuTU1FeXgtV1FjdTRSSFgyRDdTckFwRzZZSzJndHFTRHVGcklNbjhPaW83UVQ1ZHBfc21iRXdsVzR4RmJ2ZEF2ZTJRckxTQmJ2cEl4WmNkY3JwMnBobXVuWDlBLXp0VW9qOGg?oc=5",
-            "date": "Fri, 19 Dec 2025 08:00:00 GMT"
+            "title": "廣達衝 AI 加碼美國 將投入逾26億取得加州廠設備、租賃權 - 經濟日報",
+            "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5fUUVKLXpuLTk3T3RWWTZSM2lzNG1PU0Rxckh5Skttanc0UGpaNDU3M3pKakUtWmRGaHdGN2lVSVFpTUYwX1lZZHBVMUNsNkRWZTFtbjVNTW42Z9IBX0FVX3lxTE40MC11NklWd0tCVkNwTE90OWl5bkNPS1BjYjEzNGo1cmozU2xPQWFjVGZGZHk0UE1jR3lHVWpLYkFoYXRwN05Odmx5QnJLZlB6OEZLOVZWcks3clM2MjRN?oc=5",
+            "date": "Tue, 23 Dec 2025 16:47:16 GMT"
           },
           {
             "title": "【即時新聞】美國稀土公司股價11月下跌原因揭露，投資人需謹慎 - CMoney投資網誌",
@@ -253,14 +255,9 @@
             "date": "Wed, 17 Dec 2025 08:00:00 GMT"
           },
           {
-            "title": "廣達衝 AI 加碼美國 將投入逾26億取得加州廠設備、租賃權 - 經濟日報",
-            "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5fUUVKLXpuLTk3T3RWWTZSM2lzNG1PU0Rxckh5Skttanc0UGpaNDU3M3pKakUtWmRGaHdGN2lVSVFpTUYwX1lZZHBVMUNsNkRWZTFtbjVNTW42Z9IBX0FVX3lxTE40MC11NklWd0tCVkNwTE90OWl5bkNPS1BjYjEzNGo1cmozU2xPQWFjVGZGZHk0UE1jR3lHVWpLYkFoYXRwN05Odmx5QnJLZlB6OEZLOVZWcks3clM2MjRN?oc=5",
-            "date": "Tue, 23 Dec 2025 16:47:16 GMT"
-          },
-          {
             "title": "【即時新聞】美國稀土公司股價11月下跌原因揭露，投資人需謹慎 - CMoney投資網誌",
-            "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPdTZRTnJsM1Y2QndmZC1yM1czLW1yejhBU0dNUFF2dmZmOWtsNmRrUW9faGpEYUtGWERicTY2WEl4dGhEYk0wMVdrT2pZZWYxZkZwNG95TDB4Tk1ydkFpTVdwUVdvSTctcUhuVUg3THdyV2t1QXZWdlVBSkZzSjBvdjEwaHY0T2REckR2WG1GR00?oc=5",
-            "date": "Tue, 16 Dec 2025 08:00:00 GMT"
+            "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQXzJOYTcxVnFYSkZXcHZKdlZKZk91RklhcUlhM0ZyeG5LTjJpVnJuTU1FeXgtV1FjdTRSSFgyRDdTckFwRzZZSzJndHFTRHVGcklNbjhPaW83UVQ1ZHBfc21iRXdsVzR4RmJ2ZEF2ZTJRckxTQmJ2cEl4WmNkY3JwMnBobXVuWDlBLXp0VW9qOGg?oc=5",
+            "date": "Fri, 19 Dec 2025 08:00:00 GMT"
           }
         ]
       }

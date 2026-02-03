@@ -189,5 +189,49 @@ python -m http.server --directory docs 8000
 * 請自行評估資料正確性與使用風險
 
 ```
+------
+debug -以下是一段你可以直接貼到 README 的文字（針對「綠燈但股價/漲跌沒更新」這次問題與修正）：
+
+---
+
+## FAQ：Actions 綠燈但「股價 / 漲跌」顯示空白（null / `-`）
+
+### 現象
+
+GitHub Actions 執行成功、`docs/data.json` 也有更新，但 `stocks[].price` 內的：
+
+* `close`
+* `change`
+* `change_pct`
+
+全部是 `null`，前端就會顯示沒有更新。
+
+### 原因
+
+股價資料使用 TWSE 的 `STOCK_DAY` API（按「月份」回傳日資料）。在**月初第一個交易日**時，當月常只有 **1 筆**資料。
+原本程式 `scripts/update_data.py` 的 `fetch_stock_close_and_change()` 需要至少 2 筆資料才能算漲跌，且在 `len(data) < 2` 時直接回傳 `(None, None, None)`，導致 **連收盤價 close 也一起變成 null**。
+
+### 修正方式（已採用）
+
+在 `scripts/update_data.py` 做跨月補前收盤的處理：
+
+* 當月資料 **>= 2 筆**：用同月倒數第二筆作為 `prev_close` 計算漲跌（原邏輯不變）
+* 當月資料 **只有 1 筆**：
+
+  * `close` 仍使用當月最新一筆
+  * `prev_close` 改用 `prev_trading_day` 所在月份的 `STOCK_DAY` 最後一筆收盤價
+  * 由此計算 `change` 與 `change_pct`
+
+並將 main 內呼叫改為同時傳入 `prev_trading_day`（例如 `fetch_stock_close_and_change(ticker, latest, prev_date_hint=prev)`）。
+
+### 結果
+
+即使在月初（當月資料只有 1 筆）也能正常顯示：
+
+* 收盤價 `close`
+* 漲跌 `change`
+* 漲跌幅 `change_pct`
+
+---
 
 

@@ -353,37 +353,50 @@ def extract_foreign_net_shares_for_stocks(date_yyyymmdd: str, tickers: List[str]
 
 
 
-def fetch_stock_close_and_change(ticker: str, date_hint: str) -> Tuple[Optional[float], Optional[float], Optional[str]]:
-
+def fetch_stock_close_and_change(
+    ticker: str,
+    date_hint: str,
+    prev_date_hint: Optional[str] = None,
+) -> Tuple[Optional[float], Optional[float], Optional[str]]:
+    # 先抓「最新交易日所在月份」的日資料
     url = TWSE_STOCK_DAY.format(date=date_hint, stock=ticker)
-
     payload = json.loads(fetch_text(url))
-
     rows = payload.get("data") or []
 
-    if len(rows) < 2:
-
+    # 當月連 1 筆都沒有 -> 真的沒資料
+    if len(rows) < 1:
         return None, None, None
 
+    # 最新一筆的收盤價（就算只有 1 筆也要能顯示 close）
     last = rows[-1]
-
-    prev = rows[-2]
-
     close = try_parse_float(last[6]) if len(last) > 6 else None
+    if close is None:
+        return None, None, None
 
-    prev_close = try_parse_float(prev[6]) if len(prev) > 6 else None
+    # 優先用同月倒數第二筆當作 prev_close
+    prev_close: Optional[float] = None
+    if len(rows) >= 2:
+        prev = rows[-2]
+        prev_close = try_parse_float(prev[6]) if len(prev) > 6 else None
 
-    if close is None or prev_close is None:
+    # 若同月只有 1 筆：改抓「前一交易日所在月份」最後一筆 close 當 prev_close
+    if prev_close is None and prev_date_hint:
+        url2 = TWSE_STOCK_DAY.format(date=prev_date_hint, stock=ticker)
+        payload2 = json.loads(fetch_text(url2))
+        rows2 = payload2.get("data") or []
+        if len(rows2) >= 1:
+            prev2 = rows2[-1]
+            prev_close = try_parse_float(prev2[6]) if len(prev2) > 6 else None
 
+    # 還是拿不到 prev_close：只回 close，漲跌留空
+    if prev_close is None:
         return close, None, None
 
     change = close - prev_close
-
     pct = (change / prev_close * 100.0) if prev_close else None
-
     pct_str = f"{pct:+.2f}%" if pct is not None else None
-
     return close, change, pct_str
+
 
 
 
@@ -779,7 +792,7 @@ def main() -> None:
 
     for ticker, name in STOCKS:
 
-        close, change, pct = fetch_stock_close_and_change(ticker, latest)
+        close, change, pct = fetch_stock_close_and_change(ticker, latest, prev_date_hint=prev)
 
         items = fetch_rss_items(f"{ticker} {name}")
 

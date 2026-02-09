@@ -234,4 +234,14 @@ GitHub Actions 執行成功、`docs/data.json` 也有更新，但 `stocks[].pric
 
 ---
 
+現象：Actions 在「Commit & push if changed」步驟 push 失敗（log 顯示 remote reject / failure），因此「四支股」及「外資七天歷史」都沒有更新到 2/9。
+
+處理（以最小改動讓 bot 能推回 repo）：
+
+確保 workflow 有寫入權限：
+permissions: contents: write
+
+並確認 repo 設定允許 Actions 寫入（Settings → Actions → Workflow permissions 為 Read and write），以及 main 未被保護規則擋住 bot 直接 push（若有 branch protection 需調整）。
+
+結果：push 成功後，Pages/資料可正常更新到當日日期。
 

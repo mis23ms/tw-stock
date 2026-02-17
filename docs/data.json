@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-16T18:13:43+08:00",
+  "generated_at": "2026-02-17T18:09:51+08:00",
   "latest_trading_day": "2026-02-11",
   "prev_trading_day": "2026-02-10",
   "stocks": [
@@ -18,7 +18,7 @@
       "news": {
         "法說": [
           {
-            "title": "2330 台積電 - 【即時新聞】台積電法說驚艷市場，法人上修全年EPS上看95元！｜CMoney 股市爆料同學會 - CMoney",
+            "title": "2330 台積電 - 【即時新聞】台積電法說驚艷市場，法人上修全年EPS上看95元！｜CMoney 股市爆料同學會 - 理財寶",
             "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9YeEZ0ZHY0WEVJaFZBWlN0OXNldDdGV3FqbUZOQUVJWFdQdWp0dmoybXp1SG5oUGFybXgya2hoWVdCbl9GTFlnbGJGaE9MVEFGallYMFYyZUU?oc=5",
             "date": "Fri, 13 Feb 2026 15:13:47 GMT"
           }
@@ -30,39 +30,40 @@
             "date": "Wed, 11 Feb 2026 04:54:39 GMT"
           },
           {
-            "title": "2330 台積電 - 【即時新聞】富邦投顧喊出台積電目標價2450元，一月營收創歷史新高！｜CMoney 股市爆料同學會 - CMoney",
+            "title": "2330 台積電 - 【即時新聞】富邦投顧喊出台積電目標價2450元，一月營收創歷史新高！｜CMoney 股市爆料同學會 - 理財寶",
             "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE4tdVpReXRVSFVMMUlZOG5BY0tQWEdMQVdjTlBYVzNnNWFSQnBURXBaejBLZlptNXUyaF8wRVRpWlRsZ05DTGZ1Xy1yNURBUWtHdFdlRTZfcmo?oc=5",
             "date": "Sun, 15 Feb 2026 00:21:24 GMT"
           },
           {
-            "title": "【營收快訊】台積電(2330)公告01月營收 - CMoney",
-            "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAwNnhfOUdCdTVuQUd2bFNsZHduc2o0UnFwVHJzdlBLcXRCVG5CXzJ0TkNvNjV4VEZLZzVpZU5PVk1qbFJHMjNjU1JZUHc1dEZ6V2Z5QS1LYUE?oc=5",
-            "date": "Sat, 14 Feb 2026 04:34:23 GMT"
-          },
-          {
-            "title": "2330 台積電 - 【即時新聞】台積電受惠AI強勁需求，元月營收年增36%創新高！｜CMoney 股市爆料同學會 - CMoney",
+            "title": "2330 台積電 - 【即時新聞】台積電受惠AI強勁需求，元月營收年增36%創新高！｜CMoney 股市爆料同學會 - 理財寶",
             "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1jaHhreHBycTB4M1QwdXlKdzgyTTVVbDk4b2J6X2F1YzJINDltN2d2d09DSDVjZXZLUVVja3Y3MEhVQl93Zkt5bzdQQ1hSX21GcFJaY0xSTWk?oc=5",
             "date": "Fri, 13 Feb 2026 19:13:44 GMT"
           }
         ],
-        "重大訊息": [],
+        "重大訊息": [
+          {
+            "title": "胡瓜「險違約交割三千萬」！ 收工驚收銀行奪命連環call - 理財寶",
+            "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE80d0ZTTFlnTG9hdG5YX3ZQZkgwNFBKWmtISWxfT2tkaXZwbHE4M3dwYzczRjVsT1ZaTzZhS1U4YktaZ3BVOHl6aG1pNHRPZ3NldmF5cnZiNzQ?oc=5",
+            "date": "Mon, 16 Feb 2026 14:41:48 GMT"
+          }
+        ],
         "產能": [
           {
-            "title": "2330 台積電 - 【即時新聞】台積電EPS預估上修至95元！先進製程產能滿載至明年｜CMoney 股市爆料同學會 - CMoney",
+            "title": "2330 台積電 - 【即時新聞】台積電EPS預估上修至95元！先進製程產能滿載至明年｜CMoney 股市爆料同學會 - 理財寶",
             "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE10bUh1V2FFeUZFc2lvZzkyMElOaVliaDBjSkVtbzRLVWVqQXFNRE1kLWFUWXZ6dk9VZ0RzWXVIcC1XNXpqZXdQa2l6OTdWbmU5OUdxcGFNalQ?oc=5",
             "date": "Sun, 15 Feb 2026 06:13:42 GMT"
           },
           {
-            "title": "2330 台積電 - 【即時新聞】台積電通吃輝達與3A晶片訂單，CSP資本支出逾6000億美元！｜CMoney 股市爆料同學會 - CMoney",
+            "title": "2330 台積電 - 【即時新聞】台積電通吃輝達與3A晶片訂單，CSP資本支出逾6000億美元！｜CMoney 股市爆料同學會 - 理財寶",
             "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5zVzQyVFlraUN0cmtDMUcxVTBCaFZ5eG8wbEJDNFAzOHJPcWRhWWRZRThUT0JZZERKQm5DdWRCR2RBdHBCd1Jub2hGVTVjOUJNQWZhSzM0RDg?oc=5",
             "date": "Sat, 14 Feb 2026 23:21:28 GMT"
           }
         ],
         "美國出口管制": [
           {
-            "title": "2330 台積電 - ​美國藍白賀年大禮奏效，韓國瑜江啟臣緊急跪「綠卡」「美簽」？｜CMoney 股市爆料同學會 - CMoney",
-            "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1mZkZ6cmVtVl9OSzlKQmZ5OGNwLWpJUU1fdjVVR1lBTkE1QllIUHJQTC16MWpZcXI4S1djNmxmQXVZcUs3aUdYdmZwaUszOHRiMUJjUkcxOHE?oc=5",
-            "date": "Mon, 16 Feb 2026 03:43:29 GMT"
+            "title": "達利歐說美國走向帝國崩潰第六階段，去美化 - 理財寶",
+            "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9OTUJ5eFdnTFVBeTlZTFJPcDJXUzRuRTBpLVFXTzk4cHA5SVgxSWZoeWxVRXhtUzJoTm9teElHQ2hFelY5aVR3Nm5jY1hTQ1pmQnlxRjQ3M1Y?oc=5",
+            "date": "Mon, 16 Feb 2026 17:11:24 GMT"
           }
         ]
       }
@@ -83,23 +84,34 @@
         "法說": [],
         "營收": [
           {
-            "title": "2317 鴻海 - 鴻海Q1營收前景樂觀｜CMoney 股市爆料同學會 - CMoney",
+            "title": "2317 鴻海 - 【即時新聞】鴻海豪發千萬獎金激勵士氣，元月營收年增35%創佳績｜CMoney 股市爆料同學會 - 理財寶",
+            "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB2bV96N1hWR2NWbHpucXZ1MURGZXVQRHREejBobldCczJNbGFQSFZJNFE3eGI2OGhhRllRU0ZMVDl3REpUTUQ0VDk5YW5OY1V0QXVHT2E5QjY?oc=5",
+            "date": "Tue, 17 Feb 2026 02:44:47 GMT"
+          },
+          {
+            "title": "2317 鴻海 - 鴻海Q1營收前景樂觀｜CMoney 股市爆料同學會 - 理財寶",
             "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE0zeDJTeEVMYnVnNWdENFp5YzBEMVJBb1VPYW5kT0ZnVWE5RW1OeDVsS0MxcER5VW4zTkM4Q19TbENkdkNxbEU5bTZKVWtyMVFzUHpjYkRuTm0?oc=5",
             "date": "Sat, 14 Feb 2026 06:21:05 GMT"
           },
           {
-            "title": "2317 鴻海 - 【即時新聞】鴻海1月營收年增逾35%，外資看好AI伺服器動能，目標價喊上「4」字頭｜CMoney 股市爆料同學會 - CMoney",
+            "title": "【即時新聞】鴻海1月營收年增逾35%，外資看好AI伺服器動能，目標價喊上「4」字頭 - 理財寶",
             "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB3dDJxM2k4YUxtVDlrenhXU0prb1p3bjd5QnFvMXRFa3g4SFpwRVZsNWg4N3drZnJKMTBqby16NEo3VmV0WmM1N0NsS3NPWmlja29xdUlzR2o?oc=5",
             "date": "Sun, 15 Feb 2026 10:22:56 GMT"
           },
           {
-            "title": "2317 鴻海 - 【即時新聞】鴻海喊營收衝9兆，這「3檔相關股」波動劇烈！｜CMoney 股市爆料同學會 - CMoney",
+            "title": "2317 鴻海 - 【即時新聞】鴻海喊營收衝9兆，這「3檔相關股」波動劇烈！｜CMoney 股市爆料同學會 - 理財寶",
             "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBOX2dyU2JxZFIwODhSY2xFVjVpWVpYb0VYRHA2eVM3X1k1YXVlNXh0eXJIcm9sb1g3VnVpZjhKRUlvWDBLTXY2WmM1WWRRUDJHNDJUd081QUw?oc=5",
             "date": "Thu, 12 Feb 2026 11:03:05 GMT"
           }
         ],
         "重大訊息": [],
-        "產能": [],
+        "產能": [
+          {
+            "title": "【即時新聞】亞馬遜狂砸AI資本支出，鴻海(2317)目標價喊上400元！這「3 檔概念股」多空交戰？ - CMoney投資網誌",
+            "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNQng1UGlZYS1ScEdJZzc4UWp3ZGJ1bV9DV0RjSFE3THFoMjZtWkVlZk8xT0ZZVEsxZ1Fkc3FFMnBrRHRHNXo2Q0pHaUlmVjZBTWRrZU1ycE93X3pyaXZYYTBlcUlFSms3NVNLVHdJd2VFMEtWaktreFB1aUF4V1JkTXF4VEN2YmJMRW0xVFl3bVo?oc=5",
+            "date": "Tue, 17 Feb 2026 03:03:24 GMT"
+          }
+        ],
         "美國出口管制": []
       }
     },
@@ -124,31 +136,20 @@
             "date": "Tue, 10 Feb 2026 08:26:34 GMT"
           },
           {
-            "title": "緯創(3231)營收狠甩廣達，利多炸裂股價卻「軟腳」？3年噴4倍的老AI還有戲？一文拆解關鍵背後 - 今周刊",
-            "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUlZWWDUwdGg1d2xPTzBHSV9yVDVQczdaSEd6TnZzSlFDQU1xOGNtXzBaMTNXMmYtWHZOWnFPSEZSNlFJT2hnYWtHcHdBYVVoaUZoeDZRM0U0eE5VWDBaRFhBczV6U2Y5MmxqcHRaZGhXWURhVTlMRzY0cWNpcDlnMA?oc=5",
-            "date": "Thu, 11 Dec 2025 08:00:00 GMT"
-          },
-          {
-            "title": "營收旺到農曆年！嘉里大榮 EPS 增加 16％，擁全台「唯一」醫藥物流權！法人預估賺 3 元..-小資女艾蜜莉 - CMoney投資網誌",
-            "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5JSGR5dXV5VGcxN3RablQyaE9KdjY5M2tsUFNKV05ja3VzY2RzNHBUYzF5SEpWWWdqQm9UTEdMUDYyeGp4aDhwX2lvM05PLXo5emNfUENLd2VoNVlSU1h2YUJraEVJeEJ2NVhKV3RtX1JYMGwxY3BNSDlFems?oc=5",
-            "date": "Thu, 12 Feb 2026 11:05:22 GMT"
-          },
-          {
-            "title": "緯創營收連續兩月衰退...網憂「明天再吞一根黑K」 專家示警「這價位」不能破 - Yahoo股市",
-            "link": "https://news.google.com/rss/articles/CBMi6gNBVV95cUxNWEdDdkxYX3dDa212alIxdUppVHBmRDItc2FjMUFxQVZCSFVGeG1HaS05Tk02anVGb1ZTVktBV1h0LWZPeXh5cFpCamtmcm1wT2dlaHlQTkdaN01ib1JEZ0JLVEhNcTU1ZzNudXBReVU2dkZXQ3A3OW8zZU0xM182S0Jxc1FDLXJ1dVZKQ0FQbmgxWkpKVVlxUHBOLU96dnNVQ1huTlBHS25KVXY2bjQ2aW9waTVreXFlQm9uY1RmUnE0aUozRlg5cDUwR290TklVaF80bEdUS21zV2hrYUZvd0JtVlJSRGdUX0JpaHdfcktnOWtXa2FtYWJvRXpFeGJVekNmNGl3U2MwdmhuR050WWdiY3pBeEpBSGRCYWFqLTVidjE5NDdNZTA2QzgxRkdDSEc5ci1McEFybFNpdnNSa0FHZU16bnVnQzNBNG5JY3hFTjFxZFgxVVI2eXozM2gwQUpwUmlFY3pKQlVJY2Z4SUt1RThYWmkyTVpIa0M0YTc2QmtvZk9zV1JSVVdWU3VQSENRRnhrU2ZLNDgtc2lSS05IVGp4X2p5UHZkLWlSWlU5TlhOMGlyTkVNUlp1QzU3Q09kaFRoY3F0b1Q1OWttY1l0Q2p4WHIwOTY3bHhXNkZnUU9zX2pUQ19B?oc=5",
-            "date": "Thu, 05 Feb 2026 08:00:00 GMT"
+            "title": "緯創11月營收「噴到外太空」！網嗨「股價要破新高了吧」 分析師：關鍵看量能 - Yahoo股市",
+            "link": "https://news.google.com/rss/articles/CBMi9wNBVV95cUxNclk5VUtRcDJXdzRrRURIeWNBTm5fQWVWWmt4RkpLNVBZNmNvZXM0bnkyMDhQdlRQMnRfeW5TMkxaNGtINDVrNzF0dmoyQVFlUXRTNHZQaE0xS2d3SEdjREN0Yk1OcGp0cWMzNms0ZTh6ejJzVEpnOFVFdDNKdGRVcV8zZTRoZHhnWEhTRUlyT19SdDVTTmRDTVpma1QyYUNZTUFCaFBkNlVHS09YWk1CMkNrbzI4c0R0YXMtbk42aW90MzB6SHRabnEwTlliLVIxei1qazdNM2hvYlVldXNyQ0FSU3ZSWTFNTkNTZUh6NkFHY1ZidHNCNjRiQUN3V0NDOGluWXNTaEQycktyRGM2c1ZuS2E2Q3F0UHE4NFV3aGNBTW9fOEJlVXkzQjJtTUItQnpIWjZFMEFodGNZYkxxVHdISmt0RlVlMzhaZkx4Sl9SelJsWEx4MVNkcmM5Xzh5WGttQ3ZETG8zZFo5bWxFa3VsOWp2VjlmNVh6eFhKcjJ0Sndkd1c1VndGTFRDZjcwQTY0X0xhc0JLMWlRYWlYMVI3ODZXT2c2Mk42b3JDaTNXSTctajFFTi1jMGtadjI1eXBIeHVoaEFNbkdWR2tVS2Yyb1dYLVFvM2o0NW1BUGpOOUg1TXFxN0ZlZ0tzaFpFZjc3emQ0WQ?oc=5",
+            "date": "Mon, 08 Dec 2025 08:00:00 GMT"
           }
         ],
-        "重大訊息": [
-          {
-            "title": "緯創(3231)增資原因？對股價影響、AI伺服器布局與投資人必知重點｜股市話題｜豐雲學堂2026 年 02 月 - sinotrade.com.tw",
-            "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBDSkJEbGtLODRzcU5yWWx1REJ1MHprTElab01mN001VkZZQWpDTF9nN0duc0xEcVJlejY1bmNnRjVJcGpwR0x6YkhsQ3lTam9OUFdnT0U3dWVpVjF5YlBRem5tcUkwWkw4WVBPT2Q1SWtad3dxMkRQdFVXWkE?oc=5",
-            "date": "Fri, 04 Jul 2025 07:00:00 GMT"
-          }
-        ],
+        "重大訊息": [],
         "產能": [
           {
-            "title": "3231 緯創- 外資賣緯創，擴產計畫收益存疑｜CMoney 股市爆料同學會 - CMoney",
+            "title": "台/美擴產，緯創再砸逾百億資金，法人看今年獲利逾一股本，本益比委屈 - Yahoo股市",
+            "link": "https://news.google.com/rss/articles/CBMi9AJBVV95cUxQMXNrcTR3YkVMdEYwbk5faVlOeFdsUWRUSllEeERTbWFqTGYzLUE4QzR6eGdCb2hFVE41MGlYUE9uSjNSSl9sUW10RENCaVBrSHh5Mkg0dUJqVUMwUVhCVm9zb2xIajNRTXRHMFE0c2Y2VTdLbFFpd0xnOU5PeDJJb1J2bXd4dW9WYXpXLWZMNklocl9mZzBZV3hFdWlCcV9zRjRyd2JFM0FMYThLUzZRa3dGMDgxUVBGdjkydHg5S05jM1hwTUJpU0xWaTNHbjVuaU5SS1QxcFlaM0ZnUlhyMTZKWFl0Wll3TWd6Nm1DM2ZjT1dVMzVENDlKWGRDU3NFZnFKLTJNU3c0eUNyeWV4b2F3WTRmcmxDdWp1T0dnWGhQaGU4YWE4QVc0YkdIcTB6TUtQa0NRczhwdFJ0YmZ2SWV2RmtFa0syZTlCSmFwTnN1TkU5YUptazN3SHlGaXdUZi02QVN3ekZ4WXVLRXJBRmhZV2Y?oc=5",
+            "date": "Thu, 22 Jan 2026 08:00:00 GMT"
+          },
+          {
+            "title": "3231 緯創- 外資賣緯創，擴產計畫收益存疑｜CMoney 股市爆料同學會 - 理財寶",
             "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1TdFhyWXR2d2xOYVZSWWdEUTI0dUxSUFVFU2NKaDhVQWFwQnNrX2pzMk5tZzRub3ByV2trSExsNUc2ME9nQ3NXaG1XSWdSMVIyc2VMVENDejY?oc=5",
             "date": "Fri, 23 Jan 2026 08:00:00 GMT"
           }
@@ -172,9 +173,19 @@
         "法說": [],
         "營收": [
           {
-            "title": "2382 廣達- 【即時新聞】廣達入列565潛力股，現金股息與營收雙優勢吸睛｜CMoney 股市爆料同學會 - CMoney",
-            "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBKbnBEeFRaLWVTb0xwMk5nR0VsQ2hBT1F1LXE0R19WdjNobk1kd0Fid1pReGlPUGRwcFdhak1nMnFIeUVWSE5XYWtvSFVieVdSU1VxdDJ6VDA?oc=5",
-            "date": "Wed, 11 Feb 2026 17:28:17 GMT"
+            "title": "廣達1月營收2308億元年增6成 改寫歷史次高 - Yahoo股市",
+            "link": "https://news.google.com/rss/articles/CBMipAJBVV95cUxQVk8tRFlKVFA4Z3FGWFNCRU1rZEtFR2xPRzdqUXdCWExLYWY0ei1reHQyeC04ZkJuc3FEVm1lZTdEd2VPU1U3ZDFMS05KM0VTN21heWl2WFh1aVJTeGJzaXNzYjh2ZkgwNEV6aTZDQmQwYVEzQ2NhV1FvRTFKeU1McXcxeklHSGFFRXJ4RGl1THY0Ump3WFc2TXJicW90akNSSmtIU3ZQMkdRaUlOOWFXeWo5WkNCLTl6NzhWaW5TenVGeGhJbGhTbmxZUExXWUFMNF9ZcU5hS3RFYnZzMEI5RF9iUmtoTTFQUnlWNU5pUnVWZUhUa0xUaC1zX1FqclZKVEhBMXd6UWN3R2tLWlFNaGN4blFSdGJiMFZMTWUyRWl2eTFu?oc=5",
+            "date": "Mon, 09 Feb 2026 08:09:38 GMT"
+          },
+          {
+            "title": "2382 廣達- 【即時新聞】廣達1月營收年增61.9%創歷史次高，受惠AI伺服器淡季不淡｜CMoney 股市爆料同學會 - 理財寶",
+            "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5qXzlmR3VFejByRUlYR0tXQ04tZTA2QkliSVdrd1Ryd080RldiUkxOMlRWOXBLYzlHdWxjRVBPd0h4eWlKamtuYW9IOVpFNWViUmJJVDhaQ1U?oc=5",
+            "date": "Mon, 09 Feb 2026 10:07:13 GMT"
+          },
+          {
+            "title": "廣達11月營收1929億元年增三成 改寫歷史新猷 - Yahoo股市",
+            "link": "https://news.google.com/rss/articles/CBMisAJBVV95cUxOcTFPaDhhYkcxSFBkRmxLOFNibUlwUjJZbkpzMXU1SGp1Vy14RFVkZ2tWdExkZmt6ZG1IX1BXYVRtSGlUOWxTekNWaUV6a3hGSV9VVkNNMG1FVTVucHB1NUNuMVdkMUpqd3daV0xLbVEwZW05dTdKbUlGTUVRTlJxa3pIRnZ1MnIzaFNrdERDcldVNVo4NXQyZnp3VFRXbFhsRnVPdlJFYUhFRUI0eDZDNElmSllUNkY3MmR3eGhhWXd4N2NZbHgwX2FMR2tyMjhxLW5PWEktdHQ5SVN0M2dTeW1BMjlJbjJKV2RxYVY3UEd1U1FWN1ptY2Yzc1dyNjFQLVEyNHlCd3RSc1BFc1VKaFZpYnZqQm53d3VjdVpZYUFfaTRpaGZXTk96X29SR3Vk?oc=5",
+            "date": "Mon, 08 Dec 2025 08:00:00 GMT"
           },
           {
             "title": "電子五哥元月營收一次看！廣達緯創站穩2千億元之上 和碩唯一年月雙衰 - Yahoo股市",
@@ -182,41 +193,31 @@
             "date": "Tue, 10 Feb 2026 08:26:34 GMT"
           },
           {
-            "title": "〈電子五哥營收〉廣達1月營收2308億元年增逾6成 再度刷新歷年同期高 - news.cnyes.com",
-            "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE52ZDRMUExoR0M4YkNTSVdGSE51RzVCMW5GTm8zdUdfS3U3SnJlcUlWX2tBTFBXVkRZT3ZCQ2JoSklWT0cxdkh1bDhoVE9oUGs?oc=5",
-            "date": "Mon, 09 Feb 2026 07:23:13 GMT"
+            "title": "廣達1月營收月減15%...網歎「買老AI身心受創」 分析師看法出爐 - Yahoo股市",
+            "link": "https://news.google.com/rss/articles/CBMigwNBVV95cUxNLTBXOXYtNTFMQ1FRZjJNcEE3VDZVX2J1U1pIbTdsVEo0bUlUN1NNMVk3ZkVEdmxpZWJKNUNiNWpTbkVDVDgzR2lVTmt4bG9yVFhtVlVkYlRUd2hvYm9lUXphT3hWZ0hfTkc5OVRYamw5bU5FNEFEMmZhUU5rc0JZaW5NeHltbTQtVVlmR042NmxFUXBJeDczNzYxVnNIaHVYSDF1NTkycXc2NXlld2Iza25BYkI1QmhoV1RCU0ktaXRGTk9GU0dwU0l3NG84YzFEalpTTnR1Q2M2RWZzbE10Y3lqVHN5OEo5QkgzMXB5QjExODFtdTEzaEotQ2lVMXNIUC1VVHJPRDBnZWl1a2V5ZVVLU1dET2lSS0xvczlzb1NobUxmb0w0NkVSVm8yR3JsVHF4aFNRTVBHd3drQUJXb1dLQzBPZDBJR19VWDZ0Q0plMFNDZVVhZ1B2c0ZHTS14RmJHNC1zQlF5STFjeGZaYllCQVk0N0RrZU4xRWJmVWdiWmc?oc=5",
+            "date": "Mon, 09 Feb 2026 09:45:53 GMT"
           },
           {
-            "title": "廣達1月營收2308億元年增6成 改寫歷史次高 - Yahoo股市",
-            "link": "https://news.google.com/rss/articles/CBMipAJBVV95cUxQVk8tRFlKVFA4Z3FGWFNCRU1rZEtFR2xPRzdqUXdCWExLYWY0ei1reHQyeC04ZkJuc3FEVm1lZTdEd2VPU1U3ZDFMS05KM0VTN21heWl2WFh1aVJTeGJzaXNzYjh2ZkgwNEV6aTZDQmQwYVEzQ2NhV1FvRTFKeU1McXcxeklHSGFFRXJ4RGl1THY0Ump3WFc2TXJicW90akNSSmtIU3ZQMkdRaUlOOWFXeWo5WkNCLTl6NzhWaW5TenVGeGhJbGhTbmxZUExXWUFMNF9ZcU5hS3RFYnZzMEI5RF9iUmtoTTFQUnlWNU5pUnVWZUhUa0xUaC1zX1FqclZKVEhBMXd6UWN3R2tLWlFNaGN4blFSdGJiMFZMTWUyRWl2eTFu?oc=5",
-            "date": "Mon, 09 Feb 2026 08:09:38 GMT"
-          },
-          {
-            "title": "2382 廣達- 【即時新聞】廣達1月營收年增61.9%創歷史次高，受惠AI伺服器淡季不淡｜CMoney 股市爆料同學會 - CMoney",
-            "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5qXzlmR3VFejByRUlYR0tXQ04tZTA2QkliSVdrd1Ryd080RldiUkxOMlRWOXBLYzlHdWxjRVBPd0h4eWlKamtuYW9IOVpFNWViUmJJVDhaQ1U?oc=5",
-            "date": "Mon, 09 Feb 2026 10:07:13 GMT"
-          },
-          {
-            "title": "2382 廣達 - 🔥 廣達營收再創佳績！ 🔥 廣達（2382）最新公告 ...｜CMoney 股市爆料同學會 - CMoney",
+            "title": "2382 廣達 - 🔥 廣達營收再創佳績！ 🔥 廣達（2382）最新公告 ...｜CMoney 股市爆料同學會 - 理財寶",
             "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBYTjhreW5GYW1OaE9xbTY5azNLXy12S1ZvY0JNdjV0eUphRlpwd2lVUGMzWlpab2Z6R2ZYTVZDYnhMM2FzZkVZckdiOHg4d1VNb19DZjkyZTM?oc=5",
-            "date": "Mon, 09 Feb 2026 02:17:45 GMT"
+            "date": "Mon, 09 Feb 2026 18:53:00 GMT"
           },
           {
-            "title": "2382 廣達- 廣達一月營收｜CMoney 股市爆料同學會 - CMoney",
+            "title": "2382 廣達- 廣達一月營收｜CMoney 股市爆料同學會 - 理財寶",
             "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE4xbWJ2YUFKQW9NSE13X0J6Ulp2Z281Ukk0SjZjMExrbS01a1ZkMm5ZNmtDXzh4MjJmTVZ4RVhPNWZjelJNS1BheWYzYW5KQk15RmFVQnljNXE?oc=5",
             "date": "Mon, 09 Feb 2026 07:50:45 GMT"
           },
           {
-            "title": "2382 廣達 - 0209~小G碎碎念～廣達這份剛出爐的 2,308 億 營收...｜CMoney 股市爆料同學會 - CMoney",
-            "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9HUGVTVDhaUjFLN0RqX3ZBUGZYTlVIaEpjNzhNVTU5a0JZTUpjR3U3LTNVTW5Zcy1BVFVNNUdlWXg3TGljZS16VzJNc1l1UWVVeWxSVzZKMnI?oc=5",
-            "date": "Sun, 08 Feb 2026 19:31:21 GMT"
+            "title": "2382 廣達- 【即時新聞】廣達入列565潛力股，現金股息與營收雙優勢吸睛｜CMoney 股市爆料同學會 - 理財寶",
+            "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBKbnBEeFRaLWVTb0xwMk5nR0VsQ2hBT1F1LXE0R19WdjNobk1kd0Fid1pReGlPUGRwcFdhak1nMnFIeUVWSE5XYWtvSFVieVdSU1VxdDJ6VDA?oc=5",
+            "date": "Sun, 08 Feb 2026 10:51:14 GMT"
           }
         ],
         "重大訊息": [],
         "產能": [],
         "美國出口管制": [
           {
-            "title": "2382 廣達- 今年以來，廣達已多次取得美國田納西與加州廠房租賃權，並持續投...｜CMoney 股市爆料同學會 - CMoney",
+            "title": "2382 廣達- 今年以來，廣達已多次取得美國田納西與加州廠房租賃權，並持續投...｜CMoney 股市爆料同學會 - 理財寶",
             "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE91S3FYWDROa1RFNGpEdHd4dU9zejhZZGlNT3FZbjZzWC10S2xXRGNyNU5kODk4Wk83czYtZC13UkpQQ0EyM1YzT1VjUDJzODd6UXlYbGpIZ0E?oc=5",
             "date": "Mon, 05 Jan 2026 08:00:00 GMT"
           }

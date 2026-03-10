@@ -1,27 +1,62 @@
 {
-  "generated_at": "2026-03-09T18:09:57+08:00",
-  "latest_trading_day": "2026-03-09",
-  "prev_trading_day": "2026-03-06",
+  "generated_at": "2026-03-10T18:02:55+08:00",
+  "latest_trading_day": "2026-03-10",
+  "prev_trading_day": "2026-03-09",
   "stocks": [
     {
       "ticker": "2330",
       "name": "台積電",
       "price": {
-        "close": 1810.0,
-        "change": -80.0,
-        "change_pct": "-4.23%"
+        "close": 1850.0,
+        "change": 40.0,
+        "change_pct": "+2.21%"
       },
       "foreign_net_shares": {
-        "D0": -37837,
-        "D1": -10927
+        "D0": -969,
+        "D1": -37837
       },
       "news": {
         "法說": [],
         "營收": [
           {
-            "title": "希望台積電明天收完盤再公布營收最漂亮🤩 - cmoney.tw",
-            "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBMa1RXSEI3WWJLYml0M1pkbnBTZ0ZDRnd3VmpsbzNsckVMWHlSc0JNS2hpenhVckJHOGVnaW5YS0JUaC1WYmdialRyb3o4ZlpDQkJRQ0poUUs?oc=5",
-            "date": "Sun, 08 Mar 2026 16:57:13 GMT"
+            "title": "網喊台積電1500元接！營收月減逾2成明股價怎走？ 專家估有望漲20元 - Yahoo股市",
+            "link": "https://news.google.com/rss/articles/CBMiqgNBVV95cUxOMWdSNXdwVXdGMEloQ1hpOG94NVlZZnVRT2NkSHpwaFR5anA4Zlg5aC15ZTNaY1RxeS04Sm1MMkJ3NXFvcGdOYll1QU9ZcXRUYjhHX2JuR0d0eXF1WVc1bm5QUF9hUl95UUdPT25QM2pDRnJueDIzRzVQQkRKX1lsNWd3UGhMdjV1RXhiRzA5MmVfbncyeElzNjQ2OXRsaVNyY0lvWTZNaFVpdDNzdmk5a3J0VFdHMFhabFZuWVlFaHczOHJRQ0liVEhUd1Q3XzY2djFiY3RfaE5lbHJvWk9IQ1huaC1vY2pRTl9FdFRxNHBKMGV6ZTh2aFNsX01RMTFGWFl6MThEVUthLVNyb2F1OEdXeGFSTW40WUh6Und1T3VhekxRdTZzbjRNOWNPbmJ4U1FjeEw2bndEMjFxVWxmaDFNR25Ta3hsMzBlX3BZcGlWVVpwS2d1cm5hSjBxX1dDWkNMWHRtMEFEdDNJQVRCY1dYYkVKRzJ6S1dXNnVhM1lOUGdqd2lLS1FvWlg3b0l0SGhrdUxRdVA5SEJ3NTJDM1E2eWVHM0NDN3c?oc=5",
+            "date": "Tue, 10 Mar 2026 07:57:00 GMT"
+          },
+          {
+            "title": "台積電2月營收破3千億元 年增逾2成創同期新高 - 自由財經",
+            "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5ZTEtqeGJxOFpYRlVFN0lMdzdYb0pWOHFETVdiclpfMm9uRWZIb3RtME1RTlBlVkdfa1lnQ3dLSXpGVUM5aFdjYXZZdWd4eTFTUkdaTFJmS0NaQzFlbFRR0gFkQVVfeXFMT0I3Z2U3RUwzRUtWVjN1LXdxX2tkNG0ybUNWM2NCN0l4cE1xdF95dk5GelRxc1gyX3EwU0lXMm9xWGNtWmNTQ2pkY2dGYlJaTnljaWIydlp5eWpfSlBlSWxOSEFzcA?oc=5",
+            "date": "Tue, 10 Mar 2026 05:47:51 GMT"
+          },
+          {
+            "title": "台積電2月營收月減20.8% - TechNews 科技新報",
+            "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBoUTJHMzNUV19LNEZSYUJZU0w2bnZWRHFDNXRnTnZIVTJhSDEwS2REM05sS1FlemtRMFlRTi04UkxIeFExSEZPSUtTRDlDY2R0WlNxRldVcndUTHI1Vm1jalBzLVp2T2dzV3JJRWhMWk5ZcHFnRUpfMWZXWUFMUQ?oc=5",
+            "date": "Tue, 10 Mar 2026 07:53:51 GMT"
+          },
+          {
+            "title": "「台積電有在休過年喔？」 2月營收月減 20%掀網戰 5大亮點一次看 - Yahoo股市",
+            "link": "https://news.google.com/rss/articles/CBMinANBVV95cUxQZjd6NFBsLUgyMnU2UHZvdk8weUNhUDY3Ql8tUzExN18yeExzb3A2YmFNTEVYaEdNMUFLVjBMRzhIMHlSX1VjZDZjNXhDWkFBUnEzeXpodFNvYXI4U2Z5aFBXbnZYMGo0YmNQYjJyZHJuMkktZDVKRDRGSHFtdk5Lc2NiYVR5amhHQ2FzbktQS0xNUzJDRzluOW9QZW4yV2NaVTVaVVlrNDkyTkRtaFk5dkFXZ0Jxak81Zno1aE9BTm45aUpMaHVLTV9UZU1TcUc2Y0paY1djRXFKMlRrRnZyUUVmZnNzMmh3dHJyY3JfUzVESF92UXFfUndXZ1A4RU1fc1UxMGhQUkl3ZFNwNmJ1UHhCYnRCekxub2ZkUzE1MlhYSlFzVUpuVnVjaFViN2VSSmFXaXJnTDRKRGx3OG1HWjlTczZfWUU2Smsxa0RCMFV3bk9IT3ZsdTVETkdVZlM0RXRjZWRuZmVJMEc3eWZmSGFmdTNBNVdjYzI1WEhNMWpvS2NRdnh6NE01MmdOR29HcnlUdHJ2WENkRzJF?oc=5",
+            "date": "Tue, 10 Mar 2026 06:56:15 GMT"
+          },
+          {
+            "title": "年增22.2％「史上最強」！台積電2月營收3176億元 創歷年同期新高 - Yahoo股市",
+            "link": "https://news.google.com/rss/articles/CBMi5wJBVV95cUxPcGltZ05zZXd5S0tfV1dWTWVOUGpFOU5UaE9uRE5wRExSc09tVU4zc1UtX3FkV2g4bTZFSlVnZDRCVWk1SGpfd2V2SUlOcXJfN0hHckZPYUhVUElfNVVKN0ppczFzcUs1NlJ5b3JDNS14NEVPb004Q0E2Y2l3RVI1ckJXTEI1T3pSbHdQVlF5T011cWlTRUxxZ2w1M09SRmtzWmc0eUFsMTBTOW5zS2ZoMTItRzlFOHlycWl6RVcxcHRnVy1KZ09fSnV0WS1xWFdMTHF1N1VBZl83TjJVYnp0dEdvdjFRdVlZQ3U2X1RtcTd2a3pUcXdhNF9ucG1PVjAtRWxFUEg2ejhreHpjX2JxQ2dWUXJFUDZvYjg2a1QwcjloUjZjcUxlSXNla0wwdDk3dmFYRFV1em10eXhaWWRlcmhkM3I0UXBLMWVDZXNEU0hMdWlnV1JZdHBJTlk3OVVZUjEydXU1RQ?oc=5",
+            "date": "Tue, 10 Mar 2026 06:22:40 GMT"
+          },
+          {
+            "title": "快訊／股價回神 台積電2月營收出爐 - Yahoo新聞",
+            "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPX29zcWNNWUdSMmtiLW55LU5DMzhUa0pUU0dvbWFBN0ZiMG52a1lUcUNHVHpqamhlNTJpY21meG1RdGxwMk00UnNUdFpUWm1KVnpWckp1UzdQcndYRXpVQk4yUnpLUHNkQ1lsZzlRRXluWV9qR2JKNFV4OWYtWWxrYU1BY29TdzBSVm5paFN0bXN4Nnl5R1luSzBhdkJFbmJTMmU3SWxxMTB0bnJPVDBTWlRoTWJ6NXp4b0J4RTJ0RWhaSTd4LWlzVEwxX2dZSlNkbjI3a25XWTF0Y3hPOEtvaFp1WWotUUJBblNtRmdvbVE5R3hYWi0tcUotdUZGTms?oc=5",
+            "date": "Tue, 10 Mar 2026 05:48:45 GMT"
+          },
+          {
+            "title": "不愧是神山！ 晶圓代工龍頭台積電（2330）10日公布2026年2月合併營收，為3,176.6億元，受工作天數影響，較1月減少20.83％，但仍較去年同期成長約22.18％、並締歷年同期新高；累計今年前兩個月合併營收達4,670億元，年增29.9％。 - facebook.com",
+            "link": "https://news.google.com/rss/articles/CBMiogZBVV95cUxQMDhBQVZNb0ZLRzAtMnBiNVNsT2l2LUxpYWNubEczZDlPSlN5QkVGb0w0MFI5ZzVYSTA2dENtel9wMWNqODdTUmlNcldSX29xcUhRVEI2SlpqSDR5UGp2bjFzbHAzLWtIYkN4eWRXQU53ZDBYZXMtSWJUaXpTMlZkQjJGX2R4OWxhQmNXQzZjQ0VLNzNtVzVQTWJGZEIweHFsbUpCazZtczhpZkpiMVI2NVBwY0k2MTlLWWJmTW9FUHpXcHNWcm5WNkhQS1hyU0RQNnJoOUdJVE1nVjZndW1HbF9sZ2ZOQ24ycGQ4NTh4MENNT2ZFRzZ3RXJReXhQTDZoR3dDTlh1ZktuaXROZW1uRGg2V3ZfNUtUSUNOM08zU1hFWkw3X0s0M1MtV3FpQndvVWJtcENZQXZTcnZBVlNadnJCQUVWdTR1ZGxwekdMVGFncU42Q29xWUpRSXUzTTQzc0N1N3ZZZUhGVmJ0RnpVNm1OdDY1Y05rME1FNUkxMjZ5dzQ5bVBNOXcxVXJ2ano5Z0xhdzJYa3BtMlBkUVBRWEhqRzdnQUVCYzE2djlWRjc4TDVkTG5vTG1FUnlGXy1OQnRqWEZ4ZmJxQzNUTTJyMVZkQVgxcXJBTFltU3pfMTI0bEkyMGhSNkJIcUVVd3Q5dkU3TjlUTFROQTFTZWt2MURnaDdEb0UtS2pNaFAxSUtrZHM0dm1WaTNtV2FvN2NIdW4yLXdOc0RzODZBanlrWEYzenNKa25CQ0VoMGtPYjR2ZHFVUDNOWlBTWDFsM3RjUC1MODdQTktGU1lyVlZJZHZPZ1R4STBYb2hsUTlSN2pkUGZWdjNBTXFWYWc1eG9QcUk3WXJjSHlmZzdJOVgydV9NbC1NT0VORW5pT1Y4OEp3R0xMTVpRS0hOdG80cmJ5WFd3VXp3aEFVeDdqenBnMVo3S2tXZnN6VnB6T3l2ZXk5OFNrYUVDdWsyUmR3UXRoWmpoOVlnLXpLTERJT21UTUt6eTc2VGZqY3F6LVByY3dzeDZFV2ZLa0lPVml3ZGFhYThrVFZYa3JOck1BSHoxOUF3?oc=5",
+            "date": "Tue, 10 Mar 2026 05:38:49 GMT"
+          },
+          {
+            "title": "個股：提前出貨影響，台積電(2330)2月營收月減逾兩成，首季財測達成無虞 - ww2.money-link.com.tw",
+            "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNVWFlOU1DaVQ3ZkxCT0JuVmsyUW9RS2d6UnNIb0llZXh2QW1heUFtVF9lWDA0dVY3eG9xYVM5NW1ZajVjOXpja3hHTVBobWY0ak1Td1FKa3ROZVhXUjB6dHBXR2tMRG5LRzRyQ0RXRVZqdWhoN0dzNVNtLXlBN3YzRkM3VWVoaUVu?oc=5",
+            "date": "Tue, 10 Mar 2026 07:26:00 GMT"
           }
         ],
         "重大訊息": [],
@@ -33,34 +68,29 @@
       "ticker": "2317",
       "name": "鴻海",
       "price": {
-        "close": 210.5,
-        "change": -12.5,
-        "change_pct": "-5.61%"
+        "close": 209.5,
+        "change": -1.0,
+        "change_pct": "-0.48%"
       },
       "foreign_net_shares": {
-        "D0": -30301,
-        "D1": -1778
+        "D0": -25316,
+        "D1": -30301
       },
       "news": {
         "法說": [],
         "營收": [
-          {
-            "title": "2317 鴻海 - 明天又是鴻海要公佈2月營收的日子，來複習一下1月的資訊｜CMoney 股市爆料同學會 - cmoney.tw",
-            "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9uLW1sNmlaSF9zUWtxTTdNbHhjX2dCSUQ0SjFpMVRwRGs2Tmtna3ZXV0ZlaW90VVBFMUMtNkE0Qk5Kbmx0clhFT05GTEdEQ1Y2NXVzLU9TeHM?oc=5",
-            "date": "Mon, 09 Mar 2026 05:58:04 GMT"
-          },
           {
             "title": "2個月營收狂飆1.33兆！「鴻海直闖GTC」秀輝達AI機櫃 法人喊：續拿4成市占穩了 - Yahoo股市",
             "link": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxQc1NtQmhMczdobWNDUmhOZVhLRm9mTmRMYmFEOGE5c2dTdGRnalZnQkdZMGczY25ISVN5dTRCSmdPa3BnMkpBS3hQWHhDZC0yaXoxS0JJYk9QUGJKaXc2LUVjeG1wdkpONEx5UnVramg2SFhaRmw0RnRNbjlQVHpnQkd4YTRDMklVbUI3U1pkbE14dDI3UGM4d2JpX29UaUNPclFQUk96ekJxRkRVRFpSTVBWeU9MTWF0VGZIZlZhTjd2WVBEMllLY0gxeC1JSEw4Ylpqa1diUU0zWEpCQmpnTWdYN3o0M2dpem1odjZHTFp5U0k2T3cxeWhjM2U2N2NuVU05bGl4Zl9iWFVEOEZtS2d0UkdKRVZvekVUS1VEZExYZ045YlNleHdqTFlmMTZpTmhxWDZMOGpPTGlWcUVMVHEwXzVENHh2UGtnUkNPUW0?oc=5",
             "date": "Fri, 06 Mar 2026 05:00:09 GMT"
           },
           {
-            "title": "鴻海2月營收5958億元、年增逾8％ 創歷年同期最高 - 財訊",
-            "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBBWUlSeE0tLVlldUJrYzc3OERaZC1GZC13VGZHOW1KWEhMX2JKMmJ3bDBsYTBYTk1PZ1dZSWNxUF85M1hHLUJROW82cFZOOHEyOXkxeGI1ck1mRk8taWtGVUw1cFFFNGZxbzNMZkw2WmJNQTNxZi1nWWNRZw?oc=5",
-            "date": "Thu, 05 Mar 2026 09:07:20 GMT"
+            "title": "2317 鴻海 - 明天又是鴻海要公佈2月營收的日子，來複習一下1月的資訊｜CMoney 股市爆料同學會 - cmoney.tw",
+            "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9uLW1sNmlaSF9zUWtxTTdNbHhjX2dCSUQ0SjFpMVRwRGs2Tmtna3ZXV0ZlaW90VVBFMUMtNkE0Qk5Kbmx0clhFT05GTEdEQ1Y2NXVzLU9TeHM?oc=5",
+            "date": "Mon, 09 Mar 2026 05:58:04 GMT"
           },
           {
-            "title": "鴻海營收與獲利可望同步走揚 - cmoney.tw",
+            "title": "2317 鴻海 - 鴻海營收與獲利可望同步走揚｜CMoney 股市爆料同學會 - cmoney.tw",
             "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1nSzhyX2FXY2l3akl5cW1sa0dEWEwwMkRlOGdZSi13UDcxVFAtQ1FGaGhkNDB2UFluVTE0WlhNSmtzYnQ2SDFuUTRFak5SU1pCQ3NfV2J4WEs?oc=5",
             "date": "Fri, 06 Mar 2026 14:12:06 GMT"
           },
@@ -68,21 +98,6 @@
             "title": "鴻海三面解析：營收不弱、技術整理、籌碼仍偏穩 - cmoney.tw",
             "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBNSF9hWEhBWk1LNU4wSGR3RWNGREJWeFVMMWVmZEk2MjlVY2RSeGdZa2h0REt4X3RraHU2T0lENnNPOF80VlM5bkxvNFByR0FrVFBFZnZsYVk?oc=5",
             "date": "Wed, 04 Mar 2026 22:19:05 GMT"
-          },
-          {
-            "title": "鴻海AI營收增長見底見真章 - cmoney.tw",
-            "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1TN0NzWDhoUERxc0RPQlVrY1VsLTFuSVR4UDg3X3BwQXE3cUc2U0hMQ3h6YWJqTU1tcjRrWXhYMjhUOEFqeFZSU1ZKcDk0TFZTelRKTmI2LTg?oc=5",
-            "date": "Thu, 05 Mar 2026 06:22:41 GMT"
-          },
-          {
-            "title": "2317 鴻海 - 鴻海再寫同期最強！前2月營收1兆3259億元年增21%｜CMoney 股市爆料同學會 - cmoney.tw",
-            "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9ybk1yQnRUNjJVbi00VzlQODdJYXR2Z3YyNDJ5LVppMUZFa2tMckU4aXh1OV9ySkM0Vko0SmlmZ1pDWjlrRWQtUEdrYzRKdmZNUnBLTFM3NGU?oc=5",
-            "date": "Wed, 04 Mar 2026 17:04:16 GMT"
-          },
-          {
-            "title": "鴻海2026年2月營收說明 - cmoney.tw",
-            "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5Cc2loQTJrR09DRG40bGVGS3hOeE5DMWNXOTFmdWV1MFk1bFRfUUhhc2YwT0NVNG8yUy03MjdOQnJURDZjbWdxQkFhVE9YYnJpV083aGdVc2c?oc=5",
-            "date": "Wed, 04 Mar 2026 17:30:29 GMT"
           }
         ],
         "重大訊息": [],
@@ -94,26 +109,31 @@
       "ticker": "3231",
       "name": "緯創",
       "price": {
-        "close": null,
-        "change": null,
-        "change_pct": null
+        "close": 129.0,
+        "change": 1.5,
+        "change_pct": "+1.18%"
       },
       "foreign_net_shares": {
-        "D0": -9097,
-        "D1": 4107
+        "D0": -744,
+        "D1": -9097
       },
       "news": {
         "法說": [],
         "營收": [
           {
+            "title": "緯創2月營收「遠優市場預期」！網喊「股價委屈了」...分析師看法出爐 - Yahoo股市",
+            "link": "https://news.google.com/rss/articles/CBMixANBVV95cUxQWFNjX0RqcGl0VS1kWlNDWE94TFh4NDZOZ2pzbEE2cEs0Wm5TYWdXUGl3X1F3ZVZaRHFfcENTNkVYYlVYaWotSmM0NTBBQUk3bnV5dUxuWkM2dHFjekh0elg2aThnZC1DSDBid2pCVENZZ0Rqa01LVm1CVThtTWdFWDJkYUs0TFctRWFCZFFlNXhYRVAzd3FyX2dPSGZPNlZ0Wi1FRldfMHQ3UW5MRU91X0xYOUlJd1lwaVlXMW9hSDlycjBhX2d3c010LUlKaGl3ejF1U1ZIYzNZR2ZjSy1zMmtSLTBnaGZEX2huMGhKa3B6U3dHY2swMklGdGdSR0lHRDY5bENZbERfWjFHT1J5bnRQS3BBWHNKQjJGTUxkOXpsVE9pQXNSOVRLT0pZV0lRVzJLZkM0R3lNS3BMUDNITGtJWjF4SURfQmVEak01SDVpWE05d20wLXUtZHpHSFhWRlhwM2Zkc3NtdV9EZU5oZ04tUlE5OFkwWFlIdDVnTGdGc1FtdGVaVW9FQnNPeDd0WDFCX3hMR1h3VlZPR3NYNXVORzlfYlpQWGtnMWtFbktFX095aTl4YXMyeHM5eWZ4b0VBSw?oc=5",
+            "date": "Fri, 06 Mar 2026 10:06:33 GMT"
+          },
+          {
+            "title": "營收速報 - 緯創(3231)2月營收2,848.93億元年增率高達177.37％ - news.cnyes.com",
+            "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9VQ01uUjVRWm9vUGdDZ2tQa25RenJkY1diWFZMMnJmbUNuTVNUbXpTTzYteWwtSndYUk4zQ044dXRRN1hfclgxZGh5ZHE5X1E?oc=5",
+            "date": "Fri, 06 Mar 2026 09:15:26 GMT"
+          },
+          {
             "title": "緯創2月營收2848億元年增1.7倍 改寫歷史新高 - Yahoo股市",
             "link": "https://news.google.com/rss/articles/CBMipgJBVV95cUxQa2x4Y2ZmZU03Nmk5QU1yRVphUXVWT2hfanZRclg0Q091Vk8yVndNTzhRa3lyZlViMGNPT0VHb0NGbWV5TUtmWEotT054dWtrN0J1ODlFV0s4YkNVXzN6NFpwT0wwVy0waHotSTBybWQwOEdQRmQ4YTNsdHA0WWRhYTlLX3lpUTlnT3ItRmp1Zm0wTjhXSUw3ZFFNVDlWdTBjX1lXZHZ3a3JOeDhYb21kZnoySF9yZmk5TVBqeWtBN2RScVVpSWFwbWJsNEROWmpuNmdzdTF6anBUdHVqNGxHYVV6WFZkbFF3TWpQTVJRRzliX1ZyTlQzU3o3aVNiZVktaHVmSzBwbktBOXZwQWo5amxDSU01VkR2Z1JGQTdDeC04ZE1KeHc?oc=5",
             "date": "Fri, 06 Mar 2026 09:27:55 GMT"
-          },
-          {
-            "title": "〈電子五哥營收〉緯創2月營收2848億再寫新猷 AI伺服器、PC及網通產品3月迎Q1高峰 - news.cnyes.com",
-            "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFA4Y1gwTUh2TkUzWDQ4cEhWVVNiVDRfT1JYNmNPeEVHekV2ekVyV3ZvT1h6M3YzenNmb0pUTXBxc0hEYmZrUDcyR1FVbUdVOXM?oc=5",
-            "date": "Fri, 06 Mar 2026 09:41:28 GMT"
           },
           {
             "title": "緯創2月春假加班出貨AI 營收創歷史單月新高 - 自由財經",
@@ -124,11 +144,6 @@
             "title": "緯創2月營收月增24.8% - TechNews 科技新報",
             "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBxX2xicHlRM1YtaXZGUkVsWlRLanQzbUdrV3IxRE9KZG50YWl3XzNMWVNqTzBsUlNhY3g5Q2NucVplbTFIRHpRZlZMUkNEV2J6NE9ZdFNTZHdjenRadzIxOFNBTkU3Sk5jb3BpZXJOWVE5Z2twS2Vv?oc=5",
             "date": "Fri, 06 Mar 2026 19:52:28 GMT"
-          },
-          {
-            "title": "緯創2月營收「遠優市場預期」！網喊「股價委屈了」...分析師看法出爐 - Yahoo股市",
-            "link": "https://news.google.com/rss/articles/CBMixANBVV95cUxQWFNjX0RqcGl0VS1kWlNDWE94TFh4NDZOZ2pzbEE2cEs0Wm5TYWdXUGl3X1F3ZVZaRHFfcENTNkVYYlVYaWotSmM0NTBBQUk3bnV5dUxuWkM2dHFjekh0elg2aThnZC1DSDBid2pCVENZZ0Rqa01LVm1CVThtTWdFWDJkYUs0TFctRWFCZFFlNXhYRVAzd3FyX2dPSGZPNlZ0Wi1FRldfMHQ3UW5MRU91X0xYOUlJd1lwaVlXMW9hSDlycjBhX2d3c010LUlKaGl3ejF1U1ZIYzNZR2ZjSy1zMmtSLTBnaGZEX2huMGhKa3B6U3dHY2swMklGdGdSR0lHRDY5bENZbERfWjFHT1J5bnRQS3BBWHNKQjJGTUxkOXpsVE9pQXNSOVRLT0pZV0lRVzJLZkM0R3lNS3BMUDNITGtJWjF4SURfQmVEak01SDVpWE05d20wLXUtZHpHSFhWRlhwM2Zkc3NtdV9EZU5oZ04tUlE5OFkwWFlIdDVnTGdGc1FtdGVaVW9FQnNPeDd0WDFCX3hMR1h3VlZPR3NYNXVORzlfYlpQWGtnMWtFbktFX095aTl4YXMyeHM5eWZ4b0VBSw?oc=5",
-            "date": "Fri, 06 Mar 2026 10:06:33 GMT"
           },
           {
             "title": "緯創2月營收逆勢創高、3月拚續締新猷- 新聞 - MoneyDJ理財網",
@@ -155,31 +170,36 @@
       "ticker": "2382",
       "name": "廣達",
       "price": {
-        "close": 282.0,
-        "change": -7.0,
-        "change_pct": "-2.42%"
+        "close": 282.5,
+        "change": 0.5,
+        "change_pct": "+0.18%"
       },
       "foreign_net_shares": {
-        "D0": -5045,
-        "D1": -2373
+        "D0": -2160,
+        "D1": -5045
       },
       "news": {
         "法說": [],
         "營收": [
           {
-            "title": "〈電子五哥營收〉廣達連續3個月營收逾2000億 GB300為Q1伺服器出貨主力 - news.cnyes.com",
-            "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5STjJoekx1NzR1WFo3STRub3BaMTVYeFR5d2x3bUt2bnczRDA1Q25QN3ZTN2ZsVUdZRmUwUlg3YVZyM3R3LWJWc0xZWnVRcTA?oc=5",
+            "title": "廣達前2月營收寫同期高；AI伺服器展望持續強勁 - 台視全球資訊網",
+            "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQNlloYUtJcTBVYzlMS2lnMmpmUHFSZkoyMFNRMDJ4QnktdEtCSjBHU24wMmpkWUppZDk2SG1kOEcxWTZiUm5ybEtaeXN2RHJ6eGl6WTlDeTY0UUs5RzhVdFNDV2tCSzJZSzhRMDVjV3hncXFIMDVkVGltVUdIMDlJMmdKYmRIVnpmMHF3SlpHUnVfQQ?oc=5",
+            "date": "Tue, 10 Mar 2026 02:21:52 GMT"
+          },
+          {
+            "title": "廣達2月營收2155億元 月減6%仍寫歷史第三高 - Yahoo股市",
+            "link": "https://news.google.com/rss/articles/CBMipAJBVV95cUxPcVlDRlE2a0Z3bjBqZW9Va29hdjVLTnpTUkdwSWxaZVh0ejhsakhEQUExbjJvZHVYQ1N4OGE3dzhuQzhXazNxbFFGTGRXbk1sQlpZc2hZMDU2QmluSWdRSkpTOWtDZFVVMHV6MHluQ2pBS182Vmk4MEp1WXdLNmxqM3FPbnA0eWY5NVJOamo5YW9uSUVNT0R3bHZIZXBZTkF1eU5yWlRqSFlGN0xBV3FISkRzM0Q3WW5QNHdZM1ZDMTVPeW9yZlVaSWZ0Q2Y4a181cE5fbGQ3ZkVOdVZZSFJuRHBDeTNYeVY2dWstTVc4Y3Y5ZHVVdzlzR05CeWdYdE5fNnFWRmpwcktvREtBQ3ltTHlJeTU4S2JCSER2WEV6RXRLSXZf?oc=5",
+            "date": "Mon, 09 Mar 2026 06:56:01 GMT"
+          },
+          {
+            "title": "廣達2月營收創同期新高 法人持續為後市營運按讚 | 經濟日報 - LINE TODAY",
+            "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9LVDdWazM5aXVQR1czY1ZQaHFUY09lUFJWVGtOY2duelUxME54YVBVWHZINkZrN3VTS0NuOTVXamd0MzVaaC1HSVNmUTdUa2tJNTVrMWR3?oc=5",
+            "date": "Tue, 10 Mar 2026 01:07:33 GMT"
+          },
+          {
+            "title": "〈電子五哥營收〉廣達連續3個月營收逾2000億 GB300為Q1伺服器出貨主力 - 鉅亨網",
+            "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBSV1BhdGtBYXA1Mzl6WExxZk1xeEtCcjVJazdpcW1yNlNhM3FsSmgwSHZlWW1UbTlrYkdkM1BINVBGRldTTTJmWS1sOA?oc=5",
             "date": "Mon, 09 Mar 2026 08:40:32 GMT"
-          },
-          {
-            "title": "AI伺服器需求帶動 廣達2月營收2155億元年增43% - Yahoo股市",
-            "link": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxOOTJTVGJfMWprMVlPSUxtZnJYZU1mMU5rWURlM0sxVUVHY2w4Sy1yU0NscEowNjNhbTFXeUpyTU1aQ1h6dm93bEZ2SlUtcTZZcGFOcHRMLTVMX0xDNzFrYTNYb3lFRk12MUtUeWZSN3NXT1dqOUd6MFJEV2lKVE9ENXVQbE5DVTh5c0RTUDhCR0ViZV9JWmRvZ1FLd1R2UmJpZEQ4V1dJaENzU1oxdkcwVl9hOTd1VWk5WXBZZ3RlUTcyU3I0QURmOVVqTWpTMnd1cGJjaldEcllzVzhPbEdFcUxibnRPdWNTMjhkVHpqOGJ0SE9XaXI3ajBGZGFMQk1GQ1g0RmktdkFJZzRzazlabTAwUFpFdkxUS1NZQ1pYSDNRQ1cwRHdiNA?oc=5",
-            "date": "Mon, 09 Mar 2026 08:06:26 GMT"
-          },
-          {
-            "title": "廣達2月營收2,155.83 億元 - TechNews 科技新報",
-            "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5vUTctS0c0VWRCdmpzT1hMS3JnUG5qQ1ctWU5PUFhrUGREWWxCSnJncGxjUzMyVF94SkFtWk5KVUY2NTdfU21TcGpVOVFHSmFJdVFtaHc5cmNWR2thb1BtTFhaMFJTbmY1Tzlfejhpc0ZTdUl0ZGdoUnNMMnk?oc=5",
-            "date": "Mon, 09 Mar 2026 06:23:56 GMT"
           },
           {
             "title": "廣達2月營收月減年增 創下歷年同期新高 - stock.ltn.com.tw",
@@ -187,24 +207,19 @@
             "date": "Sun, 08 Mar 2026 17:20:00 GMT"
           },
           {
-            "title": "廣達2026營收年增3位數 - cmoney.tw",
-            "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBic1pNaEU3OThrS1RaeEoyR19OYzBTRmJQV3FHRzlpMmgyNjgyYlFidmJLSVFKR3NEVVdaSEp5VHhPc21PNWVqSFdVTkloZW1LREZhdWtCYng?oc=5",
-            "date": "Sun, 22 Feb 2026 08:00:00 GMT"
-          },
-          {
-            "title": "廣達2月營收2155億元 月減6%仍寫歷史第三高 - Yahoo新聞",
-            "link": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNTUx4QzRxY1p5c3lnM2JtZXl0U3pXQzZyTkx1Sm50NXBRcWM0a2k3d3J0NXVvd1dLV09VOUx4aHhzVkNZdWJhQ3hjV01peHpXdENwdlpGVGJ1Vmh5eW0wWXNzSGlBNGk5My1DMDVNcWxXVGZSVk95b1JRNTMwcjZEb1V1ZjhDNF81RkJtUjVNQU9RVHpkczNNQWpRTVp4d2t4dkNVUkVJUG5mYWZBMVlseFh1N0V3eDE2WEtyOVNsWkxucThtREc0X2NXRjNwcGtEdG1JSkwtS1lJeW5DMTNsb1pIMzlnSU5KZUV2ellfZmJINWpWTjRCVTlYamlQNDFwU0JQVy1ieG9CWkFSMmdVRzN3blFTSUdONFQtYg?oc=5",
-            "date": "Mon, 09 Mar 2026 06:51:40 GMT"
-          },
-          {
             "title": "每股配發15.6元！外資加碼廣達「目標價上調370元」 AI伺服器營收拚再翻倍 - Yahoo股市",
             "link": "https://news.google.com/rss/articles/CBMiowNBVV95cUxQVGg1SG1rSzRjbHhLT0l3ZkdTTThWRzAzRWEwWGxxa3dMSDVnRU4xNlhhM3lDc0ZlNVpVTXhJeDdPM2xfTUM4Rmhad1N5TWtrLTAzU0ZYWlBETGY2QWZHMTIyQktJUUdpb25oNjdDbWRXQTl2RXJJV1FfM3ZoemdVdGNxTmV4QWFheVdzLWU0U3J6QV9TU3BESzltUGdGb05CWUlrNTJaSG9hOE9nZnZhamN3dHRuWjZYNFROdmwxVjRZMEJOdFVodUVEakpBMWRTdmlDR05MNDR2VGcyek14cTlTRjd0d09wT2tUU1kxZzlpSjFHckFTQjNUaFhEWXo4Q2NNODNpY0FxVVBrd2FabUVsRUJjSUk5eTBvamNZYVZsWmJodXRvV2FVNUpic2lEM2NEb21JdXZDempCWEgxSzl5QWVZSHQxSlUtWFI3dlNFb3BfUlZZVGVOMEJHejBiVm92SFhZRmd4ZmNHSmZWSGJkRFZSTkxRSkpKaVNUek5oT1BaZjJDLUdQSDF6RzBLLV9oM3BSQkdDQ0lqZzFrYVp4QQ?oc=5",
             "date": "Mon, 02 Mar 2026 12:10:00 GMT"
           },
           {
-            "title": "【即時新聞】廣達(2382)受惠AI伺服器需求，1月營收年增61% - CMoney投資網誌",
-            "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNMEllV1R6M0NCdDBKbUpUdEtYczZfTzlMZ0h6QmNMMGhqV2t4bjNnTWF2WFpGYzVzVjVwNENocWVCRHh5d3JZMlpqZGgzVGR1Y0Z1RFpEVDNqQlRZZ1duMUdiYUFtOE1FX2lRNjBTbkN0MEtCQzAtOFJzdVNrQkNRQkk3N2JoM01Bcm9ZZXhubDQ?oc=5",
-            "date": "Tue, 24 Feb 2026 08:00:00 GMT"
+            "title": "《電週邊》廣達前2月營收年增逾5成 股價演半場反彈秀 - ww2.money-link.com.tw",
+            "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxObUlSbTJJU3BlVmxuRk54UnRkNkx3OFFxbUExYkxXZTliTU8wRjh5UDQ4cjVSaUVybC1VZFBfX1JDdkhueVFKenh3VWdJNUNLOHFYR1hUSlA0M3ltSlFUbTVIMW1oQndmc3ZOUHdENlh1NXM2aGNrdW1jZDJHOFVzT05nQkllM1B2?oc=5",
+            "date": "Tue, 10 Mar 2026 05:06:00 GMT"
+          },
+          {
+            "title": "2382 廣達- 廣達2026營收年增3位數｜CMoney 股市爆料同學會 - cmoney.tw",
+            "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBic1pNaEU3OThrS1RaeEoyR19OYzBTRmJQV3FHRzlpMmgyNjgyYlFidmJLSVFKR3NEVVdaSEp5VHhPc21PNWVqSFdVTkloZW1LREZhdWtCYng?oc=5",
+            "date": "Sun, 22 Feb 2026 08:00:00 GMT"
           }
         ],
         "重大訊息": [],
@@ -214,751 +229,751 @@
     }
   ],
   "fubon_zgb": {
-    "date": "20260309",
+    "date": "20260310",
     "unit": "仟元",
     "brokers": [
       {
         "name": "摩根大通",
-        "buy": "31,986,824",
-        "sell": "44,353,716",
-        "diff": "-12,366,892"
+        "buy": "29,589,731",
+        "sell": "38,929,745",
+        "diff": "-9,340,014"
       },
       {
         "name": "台灣摩根士丹利",
-        "buy": "31,499,283",
-        "sell": "50,376,342",
-        "diff": "-18,877,058"
+        "buy": "34,016,100",
+        "sell": "43,622,920",
+        "diff": "-9,606,820"
       },
       {
         "name": "新加坡商瑞銀",
-        "buy": "36,703,224",
-        "sell": "33,083,122",
-        "diff": "3,620,101"
+        "buy": "27,336,793",
+        "sell": "34,371,723",
+        "diff": "-7,034,930"
       },
       {
         "name": "美林",
-        "buy": "18,765,213",
-        "sell": "24,372,684",
-        "diff": "-5,607,471"
+        "buy": "27,027,159",
+        "sell": "25,491,053",
+        "diff": "1,536,105"
       },
       {
         "name": "花旗環球",
-        "buy": "7,194,126",
-        "sell": "11,540,599",
-        "diff": "-4,346,473"
+        "buy": "9,844,628",
+        "sell": "8,218,055",
+        "diff": "1,626,573"
       },
       {
         "name": "美商高盛",
-        "buy": "43,421,695",
-        "sell": "55,726,936",
-        "diff": "-12,305,242"
+        "buy": "-",
+        "sell": "-",
+        "diff": "-"
       }
     ]
   },
   "fubon_zgk_d": {
-    "date": "20260309",
+    "date": "20260310",
     "buy": [
       {
         "rank": "1",
-        "stock": "00953B群益優選非投等債",
-        "net": "39,955",
-        "close": "9.68",
-        "change": "-0.03"
-      },
-      {
-        "rank": "2",
-        "stock": "2344華邦電",
-        "net": "22,001",
-        "close": "101",
-        "change": "-5.5"
-      },
-      {
-        "rank": "3",
-        "stock": "0056元大高股息",
-        "net": "13,146",
-        "close": "37.58",
-        "change": "-1.05"
-      },
-      {
-        "rank": "4",
-        "stock": "00715L期街口布蘭特正2",
-        "net": "12,111",
-        "close": "61.95",
-        "change": "23.79"
-      },
-      {
-        "rank": "5",
-        "stock": "00642U期元大S＆P石油",
-        "net": "10,913",
-        "close": "27.95",
-        "change": "6.95"
-      },
-      {
-        "rank": "6",
-        "stock": "00985B群益ESG投等債0-5",
-        "net": "8,519",
-        "close": "10.37",
-        "change": "0.02"
-      },
-      {
-        "rank": "7",
-        "stock": "2409友達",
-        "net": "7,845",
-        "close": "15.6",
+        "stock": "3481群創",
+        "net": "27,917",
+        "close": "27.55",
         "change": "-0.25"
       },
       {
-        "rank": "8",
-        "stock": "2412中華電",
-        "net": "7,467",
-        "close": "136",
-        "change": "-0.5"
+        "rank": "2",
+        "stock": "00981A主動統一台股增長",
+        "net": "23,786",
+        "close": "19",
+        "change": "0.64"
       },
       {
-        "rank": "9",
-        "stock": "1605華新",
-        "net": "7,148",
-        "close": "30.5",
-        "change": "-2.25"
+        "rank": "3",
+        "stock": "00991A主動復華未來50",
+        "net": "17,519",
+        "close": "11.67",
+        "change": "0.52"
       },
       {
-        "rank": "10",
-        "stock": "4958臻鼎-KY",
-        "net": "6,269",
-        "close": "162.5",
-        "change": "-12.5"
-      },
-      {
-        "rank": "11",
-        "stock": "6770力積電",
-        "net": "5,938",
-        "close": "59.4",
-        "change": "-4.9"
-      },
-      {
-        "rank": "12",
-        "stock": "00882中信中國高股息",
-        "net": "5,789",
-        "close": "15.92",
-        "change": "-0.13"
-      },
-      {
-        "rank": "13",
-        "stock": "6443元晶",
-        "net": "5,722",
-        "close": "48.9",
-        "change": "0.8"
-      },
-      {
-        "rank": "14",
-        "stock": "00945B凱基美國非投等債",
-        "net": "5,594",
-        "close": "14.45",
-        "change": "-0.05"
-      },
-      {
-        "rank": "15",
-        "stock": "2449京元電子",
-        "net": "4,504",
-        "close": "272",
-        "change": "-12.5"
-      },
-      {
-        "rank": "16",
-        "stock": "3045台灣大",
-        "net": "4,231",
-        "close": "107.5",
-        "change": "-0.5"
-      },
-      {
-        "rank": "17",
-        "stock": "00637L元大滬深300正2",
-        "net": "3,822",
-        "close": "18.59",
-        "change": "-0.2"
-      },
-      {
-        "rank": "18",
-        "stock": "8110華東",
-        "net": "3,332",
-        "close": "50.5",
-        "change": "-4.2"
-      },
-      {
-        "rank": "19",
-        "stock": "2867三商壽",
-        "net": "3,227",
-        "close": "7.88",
-        "change": "-0.18"
-      },
-      {
-        "rank": "20",
-        "stock": "00753L中信中國50正2",
-        "net": "3,212",
-        "close": "10.48",
-        "change": "-0.33"
-      },
-      {
-        "rank": "21",
-        "stock": "3189景碩",
-        "net": "3,043",
-        "close": "264.5",
-        "change": "-27"
-      },
-      {
-        "rank": "22",
-        "stock": "8112至上",
-        "net": "2,813",
-        "close": "71.5",
-        "change": "2.3"
-      },
-      {
-        "rank": "23",
-        "stock": "1504東元",
-        "net": "2,587",
-        "close": "68.8",
-        "change": "-3.5"
-      },
-      {
-        "rank": "24",
-        "stock": "8150南茂",
-        "net": "2,572",
-        "close": "58.4",
-        "change": "-3.5"
-      },
-      {
-        "rank": "25",
-        "stock": "009811統一美國50",
-        "net": "2,470",
-        "close": "11.15",
-        "change": "-0.29"
-      },
-      {
-        "rank": "26",
-        "stock": "6282康舒",
-        "net": "2,346",
-        "close": "43.1",
-        "change": "-3.3"
-      },
-      {
-        "rank": "27",
-        "stock": "6285啟��",
-        "net": "2,291",
-        "close": "152",
-        "change": "-14"
-      },
-      {
-        "rank": "28",
-        "stock": "2324仁寶",
-        "net": "2,199",
-        "close": "31.3",
-        "change": "-0.15"
-      },
-      {
-        "rank": "29",
-        "stock": "4919新唐",
-        "net": "2,082",
-        "close": "81.8",
-        "change": "1.5"
-      },
-      {
-        "rank": "30",
-        "stock": "2331精英",
-        "net": "1,936",
-        "close": "22.5",
-        "change": "-1.7"
-      },
-      {
-        "rank": "31",
-        "stock": "00757統一FANG+",
-        "net": "1,761",
-        "close": "108.55",
-        "change": "-3.95"
-      },
-      {
-        "rank": "32",
-        "stock": "4904遠傳",
-        "net": "1,707",
-        "close": "91.5",
-        "change": "-1.5"
-      },
-      {
-        "rank": "33",
-        "stock": "4938和碩",
-        "net": "1,684",
-        "close": "69.5",
-        "change": "-1.5"
-      },
-      {
-        "rank": "34",
-        "stock": "00963中信全球高股息",
-        "net": "1,679",
-        "close": "12.06",
-        "change": "-0.24"
-      },
-      {
-        "rank": "35",
-        "stock": "2376技嘉",
-        "net": "1,655",
-        "close": "215",
-        "change": "-4"
-      },
-      {
-        "rank": "36",
-        "stock": "2892第一金",
-        "net": "1,652",
-        "close": "29.1",
-        "change": "-0.3"
-      },
-      {
-        "rank": "37",
-        "stock": "4960誠美材",
-        "net": "1,595",
-        "close": "17.1",
-        "change": "-0.7"
-      },
-      {
-        "rank": "38",
-        "stock": "2637慧洋-KY",
-        "net": "1,586",
-        "close": "66.8",
-        "change": "-3.6"
-      },
-      {
-        "rank": "39",
-        "stock": "2352佳世達",
-        "net": "1,455",
-        "close": "23.2",
-        "change": "-0.55"
-      },
-      {
-        "rank": "40",
-        "stock": "2515中工",
-        "net": "1,400",
-        "close": "15.8",
-        "change": "-0.9"
-      },
-      {
-        "rank": "41",
-        "stock": "2353宏��",
-        "net": "1,313",
-        "close": "26.2",
-        "change": "-0.7"
-      },
-      {
-        "rank": "42",
-        "stock": "6213聯茂",
-        "net": "1,297",
-        "close": "115",
-        "change": "-12.5"
-      },
-      {
-        "rank": "43",
-        "stock": "6191精成科",
-        "net": "1,278",
-        "close": "90.6",
-        "change": "-7.4"
-      },
-      {
-        "rank": "44",
-        "stock": "2458義隆",
-        "net": "1,258",
-        "close": "130.5",
-        "change": "-1"
-      },
-      {
-        "rank": "45",
-        "stock": "2371大同",
-        "net": "1,229",
-        "close": "32.4",
-        "change": "-1.45"
-      },
-      {
-        "rank": "46",
-        "stock": "2006東和鋼鐵",
-        "net": "1,210",
-        "close": "80.9",
-        "change": "0.5"
-      },
-      {
-        "rank": "47",
-        "stock": "2379瑞昱",
-        "net": "1,194",
-        "close": "484",
+        "rank": "4",
+        "stock": "2408南亞科",
+        "net": "17,183",
+        "close": "231",
         "change": "21"
       },
       {
+        "rank": "5",
+        "stock": "00990A主動元大AI新經濟",
+        "net": "17,108",
+        "close": "11.75",
+        "change": "0.71"
+      },
+      {
+        "rank": "6",
+        "stock": "8112至上",
+        "net": "13,602",
+        "close": "77.7",
+        "change": "6.2"
+      },
+      {
+        "rank": "7",
+        "stock": "00891中信關鍵半導體",
+        "net": "12,080",
+        "close": "23.37",
+        "change": "0.71"
+      },
+      {
+        "rank": "8",
+        "stock": "00988A主動統一全球創新",
+        "net": "11,248",
+        "close": "12.29",
+        "change": "0.93"
+      },
+      {
+        "rank": "9",
+        "stock": "00715L期街口布蘭特正2",
+        "net": "10,883",
+        "close": "44.8",
+        "change": "-17.15"
+      },
+      {
+        "rank": "10",
+        "stock": "1303南亞",
+        "net": "10,465",
+        "close": "77.7",
+        "change": "3.6"
+      },
+      {
+        "rank": "11",
+        "stock": "00982A主動群益台灣強棒",
+        "net": "10,382",
+        "close": "15.43",
+        "change": "0.63"
+      },
+      {
+        "rank": "12",
+        "stock": "00992A主動群益科技創新",
+        "net": "9,130",
+        "close": "11.89",
+        "change": "0.54"
+      },
+      {
+        "rank": "13",
+        "stock": "00929復華台灣科技優息",
+        "net": "8,396",
+        "close": "19.11",
+        "change": "0.42"
+      },
+      {
+        "rank": "14",
+        "stock": "1326台化",
+        "net": "8,293",
+        "close": "44.25",
+        "change": "1.2"
+      },
+      {
+        "rank": "15",
+        "stock": "00878國泰永續高股息",
+        "net": "6,914",
+        "close": "22",
+        "change": "0.25"
+      },
+      {
+        "rank": "16",
+        "stock": "3645達邁",
+        "net": "6,099",
+        "close": "75.5",
+        "change": "6.8"
+      },
+      {
+        "rank": "17",
+        "stock": "6213聯茂",
+        "net": "5,867",
+        "close": "126.5",
+        "change": "11.5"
+      },
+      {
+        "rank": "18",
+        "stock": "00945B凱基美國非投等債",
+        "net": "5,257",
+        "close": "14.51",
+        "change": "0.06"
+      },
+      {
+        "rank": "19",
+        "stock": "8271宇瞻",
+        "net": "5,220",
+        "close": "131",
+        "change": "9"
+      },
+      {
+        "rank": "20",
+        "stock": "5871中租-KY",
+        "net": "5,191",
+        "close": "104",
+        "change": "4.5"
+      },
+      {
+        "rank": "21",
+        "stock": "00993A主動安聯台灣",
+        "net": "4,911",
+        "close": "10.01",
+        "change": "0.21"
+      },
+      {
+        "rank": "22",
+        "stock": "00830國泰費城半導體",
+        "net": "4,884",
+        "close": "54.75",
+        "change": "2.75"
+      },
+      {
+        "rank": "23",
+        "stock": "8039台虹",
+        "net": "4,800",
+        "close": "106",
+        "change": "9.3"
+      },
+      {
+        "rank": "24",
+        "stock": "1718中纖",
+        "net": "4,511",
+        "close": "7.41",
+        "change": "-0.15"
+      },
+      {
+        "rank": "25",
+        "stock": "1605華新",
+        "net": "4,399",
+        "close": "31.5",
+        "change": "1"
+      },
+      {
+        "rank": "26",
+        "stock": "00753L中信中國50正2",
+        "net": "4,181",
+        "close": "11.16",
+        "change": "0.68"
+      },
+      {
+        "rank": "27",
+        "stock": "00688L國泰20年美債正2",
+        "net": "3,931",
+        "close": "7.5",
+        "change": "0.2"
+      },
+      {
+        "rank": "28",
+        "stock": "00665L富邦�琤肭磪囓�2",
+        "net": "3,685",
+        "close": "9.93",
+        "change": "0.37"
+      },
+      {
+        "rank": "29",
+        "stock": "00995A主動中信台灣卓越",
+        "net": "3,671",
+        "close": "10.99",
+        "change": "0.4"
+      },
+      {
+        "rank": "30",
+        "stock": "6770力積電",
+        "net": "3,466",
+        "close": "62.2",
+        "change": "2.8"
+      },
+      {
+        "rank": "31",
+        "stock": "3006晶豪科",
+        "net": "3,439",
+        "close": "145",
+        "change": "13"
+      },
+      {
+        "rank": "32",
+        "stock": "00940元大台灣價值高息",
+        "net": "3,364",
+        "close": "9.53",
+        "change": "0.1"
+      },
+      {
+        "rank": "33",
+        "stock": "2367燿華",
+        "net": "3,180",
+        "close": "63.1",
+        "change": "1"
+      },
+      {
+        "rank": "34",
+        "stock": "3715定穎投控",
+        "net": "3,074",
+        "close": "146.5",
+        "change": "7.5"
+      },
+      {
+        "rank": "35",
+        "stock": "00927群益半導體收益",
+        "net": "3,019",
+        "close": "23.87",
+        "change": "0.71"
+      },
+      {
+        "rank": "36",
+        "stock": "9933中鼎",
+        "net": "2,415",
+        "close": "31.1",
+        "change": "1.35"
+      },
+      {
+        "rank": "37",
+        "stock": "2376技嘉",
+        "net": "2,370",
+        "close": "221",
+        "change": "6"
+      },
+      {
+        "rank": "38",
+        "stock": "3037欣興",
+        "net": "2,268",
+        "close": "424",
+        "change": "35"
+      },
+      {
+        "rank": "39",
+        "stock": "2355敬鵬",
+        "net": "2,254",
+        "close": "42.25",
+        "change": "1.7"
+      },
+      {
+        "rank": "40",
+        "stock": "2324仁寶",
+        "net": "2,235",
+        "close": "31.75",
+        "change": "0.45"
+      },
+      {
+        "rank": "41",
+        "stock": "00985A主動野村台灣50",
+        "net": "2,200",
+        "close": "15.59",
+        "change": "0.43"
+      },
+      {
+        "rank": "42",
+        "stock": "2426鼎元",
+        "net": "2,168",
+        "close": "25.55",
+        "change": "0.5"
+      },
+      {
+        "rank": "43",
+        "stock": "1312國喬",
+        "net": "2,114",
+        "close": "13.55",
+        "change": "-0.4"
+      },
+      {
+        "rank": "44",
+        "stock": "00951台新日本半導體",
+        "net": "2,061",
+        "close": "13.79",
+        "change": "0.77"
+      },
+      {
+        "rank": "45",
+        "stock": "6153嘉聯益",
+        "net": "1,947",
+        "close": "15.85",
+        "change": "1.4"
+      },
+      {
+        "rank": "46",
+        "stock": "00987A主動台新優勢成長",
+        "net": "1,778",
+        "close": "10.89",
+        "change": "0.39"
+      },
+      {
+        "rank": "47",
+        "stock": "00909國泰數位支付服務",
+        "net": "1,682",
+        "close": "39.23",
+        "change": "2.07"
+      },
+      {
         "rank": "48",
-        "stock": "3535晶彩科",
-        "net": "1,186",
-        "close": "147",
-        "change": "-1.5"
+        "stock": "8110華東",
+        "net": "1,658",
+        "close": "53.6",
+        "change": "3.1"
       },
       {
         "rank": "49",
-        "stock": "00865B國泰US短期公債",
-        "net": "1,180",
-        "close": "48.02",
-        "change": "0.23"
+        "stock": "6282康舒",
+        "net": "1,592",
+        "close": "45.1",
+        "change": "2"
       },
       {
         "rank": "50",
-        "stock": "009805新光美國電力基建",
-        "net": "1,179",
-        "close": "14.18",
-        "change": "-0.48"
+        "stock": "2049上銀",
+        "net": "1,491",
+        "close": "232",
+        "change": "12"
       }
     ],
     "sell": [
       {
         "rank": "1",
         "stock": "0050元大台灣50",
-        "net": "-200,178",
-        "close": "73.6",
-        "change": "-3.25"
+        "net": "-40,263",
+        "close": "75.2",
+        "change": "1.6"
       },
       {
         "rank": "2",
-        "stock": "2330台積電",
-        "net": "-37,837",
-        "close": "1810",
-        "change": "-80"
+        "stock": "1314中石化",
+        "net": "-37,347",
+        "close": "8.96",
+        "change": "-0.85"
       },
       {
         "rank": "3",
-        "stock": "1301台塑",
-        "net": "-32,822",
-        "close": "47.35",
-        "change": "-2.85"
+        "stock": "2891中信金",
+        "net": "-29,584",
+        "close": "51.2",
+        "change": "0.2"
       },
       {
         "rank": "4",
-        "stock": "2002中鋼",
-        "net": "-30,636",
-        "close": "19.15",
-        "change": "-0.75"
+        "stock": "2337旺宏",
+        "net": "-28,810",
+        "close": "90.7",
+        "change": "-1.6"
       },
       {
         "rank": "5",
-        "stock": "2834臺企銀",
-        "net": "-30,470",
-        "close": "15.05",
-        "change": "-0.4"
+        "stock": "2344華邦電",
+        "net": "-27,350",
+        "close": "105.5",
+        "change": "4.5"
       },
       {
         "rank": "6",
         "stock": "2317鴻海",
-        "net": "-30,301",
-        "close": "210.5",
-        "change": "-12.5"
+        "net": "-25,316",
+        "close": "209.5",
+        "change": "-1"
       },
       {
         "rank": "7",
-        "stock": "00922國泰台灣領袖50",
-        "net": "-28,356",
-        "close": "28.95",
-        "change": "-1.37"
+        "stock": "2834臺企銀",
+        "net": "-19,984",
+        "close": "15.05",
+        "change": "0"
       },
       {
         "rank": "8",
-        "stock": "00991A主動復華未來50",
-        "net": "-17,877",
-        "close": "11.15",
-        "change": "-0.87"
-      },
-      {
-        "rank": "9",
-        "stock": "1312國喬",
-        "net": "-17,689",
-        "close": "13.95",
-        "change": "-0.1"
-      },
-      {
-        "rank": "10",
-        "stock": "1326台化",
-        "net": "-17,077",
-        "close": "43.05",
-        "change": "-2.95"
-      },
-      {
-        "rank": "11",
-        "stock": "2609陽明",
-        "net": "-16,531",
-        "close": "61.6",
-        "change": "0.9"
-      },
-      {
-        "rank": "12",
-        "stock": "00982A主動群益台灣強棒",
-        "net": "-16,432",
-        "close": "14.8",
-        "change": "-1.02"
-      },
-      {
-        "rank": "13",
-        "stock": "00878國泰永續高股息",
-        "net": "-15,825",
-        "close": "21.75",
-        "change": "-0.64"
-      },
-      {
-        "rank": "14",
-        "stock": "2618長榮航",
-        "net": "-15,348",
-        "close": "32.5",
-        "change": "-1.75"
-      },
-      {
-        "rank": "15",
-        "stock": "2801彰銀",
-        "net": "-14,728",
-        "close": "20.35",
-        "change": "-0.4"
-      },
-      {
-        "rank": "16",
-        "stock": "00992A主動群益科技創新",
-        "net": "-13,430",
-        "close": "11.35",
-        "change": "-0.93"
-      },
-      {
-        "rank": "17",
-        "stock": "1101台泥",
-        "net": "-13,185",
-        "close": "24.3",
-        "change": "-0.85"
-      },
-      {
-        "rank": "18",
-        "stock": "00990A主動元大AI新經濟",
-        "net": "-13,175",
-        "close": "11.04",
-        "change": "-0.93"
-      },
-      {
-        "rank": "19",
-        "stock": "2610華航",
-        "net": "-12,374",
-        "close": "18.25",
-        "change": "-0.65"
-      },
-      {
-        "rank": "20",
-        "stock": "00929復華台灣科技優息",
-        "net": "-12,342",
-        "close": "18.69",
-        "change": "-0.74"
-      },
-      {
-        "rank": "21",
-        "stock": "009816凱基台灣TOP50",
-        "net": "-12,324",
-        "close": "10.29",
-        "change": "-0.49"
-      },
-      {
-        "rank": "22",
-        "stock": "1304台聚",
-        "net": "-12,207",
-        "close": "13.8",
-        "change": "0.7"
-      },
-      {
-        "rank": "23",
-        "stock": "2485兆赫",
-        "net": "-12,064",
-        "close": "51.4",
-        "change": "-4.8"
-      },
-      {
-        "rank": "24",
-        "stock": "00993A主動安聯台灣",
-        "net": "-12,005",
-        "close": "9.8",
-        "change": "-0.45"
-      },
-      {
-        "rank": "25",
-        "stock": "2303聯電",
-        "net": "-11,969",
-        "close": "59.7",
-        "change": "-2.3"
-      },
-      {
-        "rank": "26",
-        "stock": "2887台新新光金",
-        "net": "-11,847",
-        "close": "23.95",
-        "change": "-0.45"
-      },
-      {
-        "rank": "27",
-        "stock": "2027大成鋼",
-        "net": "-11,781",
-        "close": "36.9",
-        "change": "-0.8"
-      },
-      {
-        "rank": "28",
-        "stock": "00940元大台灣價值高息",
-        "net": "-11,578",
-        "close": "9.43",
-        "change": "-0.28"
-      },
-      {
-        "rank": "29",
-        "stock": "3715定穎投控",
-        "net": "-10,133",
-        "close": "139",
-        "change": "-14.5"
-      },
-      {
-        "rank": "30",
-        "stock": "1718中纖",
-        "net": "-9,688",
-        "close": "7.56",
-        "change": "0.02"
-      },
-      {
-        "rank": "31",
-        "stock": "2886兆豐金",
-        "net": "-9,676",
-        "close": "39.2",
-        "change": "-0.1"
-      },
-      {
-        "rank": "32",
-        "stock": "3049精金",
-        "net": "-9,432",
-        "close": "13.35",
-        "change": "-1.35"
-      },
-      {
-        "rank": "33",
-        "stock": "1313聯成",
-        "net": "-9,343",
-        "close": "13.3",
-        "change": "-0.2"
-      },
-      {
-        "rank": "34",
-        "stock": "00981A主動統一台股增長",
-        "net": "-9,252",
-        "close": "18.36",
-        "change": "-1.42"
-      },
-      {
-        "rank": "35",
-        "stock": "3231緯創",
-        "net": "-9,097",
-        "close": "127.5",
-        "change": "-3"
-      },
-      {
-        "rank": "36",
-        "stock": "1303南亞",
-        "net": "-8,723",
-        "close": "74.1",
-        "change": "-8.2"
-      },
-      {
-        "rank": "37",
-        "stock": "2884玉山金",
-        "net": "-8,598",
-        "close": "33.35",
-        "change": "-0.65"
-      },
-      {
-        "rank": "38",
-        "stock": "2885元大金",
-        "net": "-8,111",
-        "close": "44.15",
-        "change": "-1.75"
-      },
-      {
-        "rank": "39",
-        "stock": "6005群益證",
-        "net": "-8,088",
-        "close": "28.1",
-        "change": "-1.9"
-      },
-      {
-        "rank": "40",
-        "stock": "5880合庫金",
-        "net": "-8,085",
-        "close": "23",
-        "change": "-0.4"
-      },
-      {
-        "rank": "41",
-        "stock": "00995A主動中信台灣卓越",
-        "net": "-8,010",
-        "close": "10.59",
-        "change": "-0.7"
-      },
-      {
-        "rank": "42",
-        "stock": "2881富邦金",
-        "net": "-7,616",
-        "close": "87.2",
-        "change": "-1.6"
-      },
-      {
-        "rank": "43",
-        "stock": "00919群益台灣精選高息",
-        "net": "-7,562",
-        "close": "23.04",
-        "change": "-0.67"
-      },
-      {
-        "rank": "44",
-        "stock": "2812台中銀",
-        "net": "-7,292",
-        "close": "20.15",
-        "change": "-0.4"
-      },
-      {
-        "rank": "45",
-        "stock": "2313華通",
-        "net": "-6,922",
-        "close": "183",
-        "change": "-20"
-      },
-      {
-        "rank": "46",
-        "stock": "00988A主動統一全球創新",
-        "net": "-6,550",
-        "close": "11.36",
-        "change": "-1.11"
-      },
-      {
-        "rank": "47",
-        "stock": "2891中信金",
-        "net": "-6,466",
-        "close": "51",
-        "change": "-0.4"
-      },
-      {
-        "rank": "48",
-        "stock": "1308亞聚",
-        "net": "-6,245",
+        "stock": "2409友達",
+        "net": "-19,688",
         "close": "15.7",
-        "change": "0.7"
-      },
-      {
-        "rank": "49",
-        "stock": "2605新興",
-        "net": "-6,041",
-        "close": "34.1",
         "change": "0.1"
       },
       {
+        "rank": "9",
+        "stock": "2887台新新光金",
+        "net": "-19,178",
+        "close": "24.3",
+        "change": "0.35"
+      },
+      {
+        "rank": "10",
+        "stock": "6443元晶",
+        "net": "-15,110",
+        "close": "47.6",
+        "change": "-1.3"
+      },
+      {
+        "rank": "11",
+        "stock": "2618長榮航",
+        "net": "-14,667",
+        "close": "32.6",
+        "change": "0.1"
+      },
+      {
+        "rank": "12",
+        "stock": "2105正新",
+        "net": "-13,027",
+        "close": "28.2",
+        "change": "-0.5"
+      },
+      {
+        "rank": "13",
+        "stock": "2485兆赫",
+        "net": "-11,759",
+        "close": "50.3",
+        "change": "-1.1"
+      },
+      {
+        "rank": "14",
+        "stock": "00919群益台灣精選高息",
+        "net": "-11,707",
+        "close": "23.24",
+        "change": "0.2"
+      },
+      {
+        "rank": "15",
+        "stock": "2610華航",
+        "net": "-11,077",
+        "close": "18.35",
+        "change": "0.1"
+      },
+      {
+        "rank": "16",
+        "stock": "2002中鋼",
+        "net": "-9,298",
+        "close": "19.2",
+        "change": "0.05"
+      },
+      {
+        "rank": "17",
+        "stock": "2027大成鋼",
+        "net": "-8,080",
+        "close": "36.45",
+        "change": "-0.45"
+      },
+      {
+        "rank": "18",
+        "stock": "2885元大金",
+        "net": "-7,025",
+        "close": "43.85",
+        "change": "-0.3"
+      },
+      {
+        "rank": "19",
+        "stock": "00922國泰台灣領袖50",
+        "net": "-6,997",
+        "close": "29.66",
+        "change": "0.71"
+      },
+      {
+        "rank": "20",
+        "stock": "6005群益證",
+        "net": "-6,847",
+        "close": "27.75",
+        "change": "-0.35"
+      },
+      {
+        "rank": "21",
+        "stock": "2884玉山金",
+        "net": "-6,122",
+        "close": "33.4",
+        "change": "0.05"
+      },
+      {
+        "rank": "22",
+        "stock": "009816凱基台灣TOP50",
+        "net": "-5,963",
+        "close": "10.52",
+        "change": "0.23"
+      },
+      {
+        "rank": "23",
+        "stock": "1216統一",
+        "net": "-5,575",
+        "close": "70.2",
+        "change": "-0.6"
+      },
+      {
+        "rank": "24",
+        "stock": "0056元大高股息",
+        "net": "-5,352",
+        "close": "37.88",
+        "change": "0.3"
+      },
+      {
+        "rank": "25",
+        "stock": "6505台塑化",
+        "net": "-5,203",
+        "close": "61.4",
+        "change": "-6.8"
+      },
+      {
+        "rank": "26",
+        "stock": "1608華榮",
+        "net": "-5,013",
+        "close": "32.85",
+        "change": "-1.55"
+      },
+      {
+        "rank": "27",
+        "stock": "2890永豐金",
+        "net": "-4,758",
+        "close": "31.3",
+        "change": "0.05"
+      },
+      {
+        "rank": "28",
+        "stock": "3576聯合再生",
+        "net": "-4,487",
+        "close": "19.8",
+        "change": "-0.5"
+      },
+      {
+        "rank": "29",
+        "stock": "1101台泥",
+        "net": "-4,290",
+        "close": "24.25",
+        "change": "-0.05"
+      },
+      {
+        "rank": "30",
+        "stock": "3711日月光投控",
+        "net": "-4,025",
+        "close": "335.5",
+        "change": "15.5"
+      },
+      {
+        "rank": "31",
+        "stock": "2515中工",
+        "net": "-3,942",
+        "close": "15.65",
+        "change": "-0.15"
+      },
+      {
+        "rank": "32",
+        "stock": "1301台塑",
+        "net": "-3,647",
+        "close": "46.5",
+        "change": "-0.85"
+      },
+      {
+        "rank": "33",
+        "stock": "5880合庫金",
+        "net": "-3,647",
+        "close": "23.1",
+        "change": "0.1"
+      },
+      {
+        "rank": "34",
+        "stock": "2801彰銀",
+        "net": "-3,594",
+        "close": "20.45",
+        "change": "0.1"
+      },
+      {
+        "rank": "35",
+        "stock": "4915致伸",
+        "net": "-3,507",
+        "close": "70.6",
+        "change": "-1"
+      },
+      {
+        "rank": "36",
+        "stock": "2882國泰金",
+        "net": "-3,486",
+        "close": "71.1",
+        "change": "1.1"
+      },
+      {
+        "rank": "37",
+        "stock": "3450聯鈞",
+        "net": "-3,477",
+        "close": "248",
+        "change": "-6.5"
+      },
+      {
+        "rank": "38",
+        "stock": "5876上海商銀",
+        "net": "-3,426",
+        "close": "38.8",
+        "change": "-0.35"
+      },
+      {
+        "rank": "39",
+        "stock": "3028增你強",
+        "net": "-3,381",
+        "close": "48.85",
+        "change": "-3.05"
+      },
+      {
+        "rank": "40",
+        "stock": "3005神基",
+        "net": "-3,289",
+        "close": "129",
+        "change": "4.5"
+      },
+      {
+        "rank": "41",
+        "stock": "2301光寶科",
+        "net": "-3,115",
+        "close": "155",
+        "change": "6"
+      },
+      {
+        "rank": "42",
+        "stock": "2634漢翔",
+        "net": "-3,037",
+        "close": "50.5",
+        "change": "-0.3"
+      },
+      {
+        "rank": "43",
+        "stock": "3535晶彩科",
+        "net": "-2,989",
+        "close": "132.5",
+        "change": "-14.5"
+      },
+      {
+        "rank": "44",
+        "stock": "6456GIS-KY",
+        "net": "-2,857",
+        "close": "57.5",
+        "change": "1"
+      },
+      {
+        "rank": "45",
+        "stock": "2880華南金",
+        "net": "-2,839",
+        "close": "34.25",
+        "change": "-0.35"
+      },
+      {
+        "rank": "46",
+        "stock": "2406國碩",
+        "net": "-2,686",
+        "close": "32",
+        "change": "-0.05"
+      },
+      {
+        "rank": "47",
+        "stock": "2633台灣高鐵",
+        "net": "-2,643",
+        "close": "26.2",
+        "change": "0.05"
+      },
+      {
+        "rank": "48",
+        "stock": "2883凱基金",
+        "net": "-2,581",
+        "close": "19.9",
+        "change": "0.35"
+      },
+      {
+        "rank": "49",
+        "stock": "4958臻鼎-KY",
+        "net": "-2,409",
+        "close": "168",
+        "change": "5.5"
+      },
+      {
         "rank": "50",
-        "stock": "2481強茂",
-        "net": "-6,018",
-        "close": "82.5",
-        "change": "-9"
+        "stock": "2352佳世達",
+        "net": "-2,405",
+        "close": "23",
+        "change": "-0.2"
       }
     ]
   }
